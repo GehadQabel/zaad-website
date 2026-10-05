@@ -290,4 +290,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
 
   document.querySelectorAll('.fade-up, .customer-side-anim, .supplier-side-anim').forEach(el => revealObserver.observe(el));
+
+  // ------------------------------------------------------------------------
+  // 7. Interactive Conversion Demo Form Submission
+  // ------------------------------------------------------------------------
+  const demoForm = document.getElementById('demo-conversion-form');
+  if (demoForm) {
+    demoForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const storeName = document.getElementById('cta-store-name')?.value.trim() || '';
+      const storeContact = document.getElementById('cta-store-contact')?.value.trim() || '';
+      const storeTypeSelect = document.getElementById('cta-store-type');
+      const storeType = storeTypeSelect ? storeTypeSelect.options[storeTypeSelect.selectedIndex].text : '';
+
+      const isArabic = document.documentElement.getAttribute('lang') === 'ar' || document.documentElement.getAttribute('dir') === 'rtl';
+      let message = '';
+      if (isArabic) {
+        message = `مرحبًا، أريد تجربة نظام زاد ZAAD POS لمتجري:\n• اسم المتجر: ${storeName}\n• رقم الهاتف / البريد: ${storeContact}\n• نوع النشاط: ${storeType}\n\nبرجاء التواصل لتجهيز النسخة التجريبية.`;
+      } else {
+        message = `Hello, I would like to request a ZAAD POS demo for my store:\n• Store Name: ${storeName}\n• Contact Info: ${storeContact}\n• Store Type: ${storeType}\n\nPlease reach out to arrange the trial.`;
+      }
+
+      const waUrl = `https://wa.me/201029247516?text=${encodeURIComponent(message)}`;
+      window.open(waUrl, '_blank');
+    });
+  }
 });
+

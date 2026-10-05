@@ -361,8 +361,14 @@ const translations = {
     "cta_eyebrow": "Live Demonstration",
     "cta_title": "See ZAAD POS Working for Your Store Firsthand",
     "cta_subtitle": "Schedule a live demonstration and see sales, inventory, shifts, and reports in action.",
+    "cta_card_badge": "⚡ Instant Live Demo • No Commitments",
+    "cta_card_title": "Experience ZAAD POS in Your Store",
+    "cta_card_desc": "Provide your store info and our team will get your hands-on trial ready right away.",
     "cta_btn_primary": "Request Demo",
     "cta_btn_wa": "Connect via WhatsApp",
+    "cta_trust_instant": "Prompt response within hours",
+    "cta_trust_free": "No forced subscriptions",
+    "cta_trust_offline": "100% Offline desktop reliability",
 
     // Floating WhatsApp & Founder Trust Strip & Footer Details
     "float_wa_label": "Connect on WhatsApp",
@@ -772,8 +778,14 @@ const translations = {
     "cta_eyebrow": "عرض تجريبي مباشر",
     "cta_title": "شوف ZAAD POS على شغل محلك بنفسك",
     "cta_subtitle": "احجز عرضًا تجريبيًا وشاهد دورة البيع والمخزون والورديات والتقارير أمامك.",
+    "cta_card_badge": "⚡ تجربة حية مجانية • بدون أي شروط",
+    "cta_card_title": "ابدأ تجربة نظام زاد في متجرك",
+    "cta_card_desc": "املأ بيانات نشاطك وسنتواصل معك فوراً لتجهيز نسختك التجريبية وتدريبك عليها.",
     "cta_btn_primary": "اطلب Demo",
     "cta_btn_wa": "تواصل على WhatsApp",
+    "cta_trust_instant": "استجابة وتجهيز سريع",
+    "cta_trust_free": "بدون أي التزام أو اشتراك إجباري",
+    "cta_trust_offline": "يعمل Offline بالكامل على جهازك",
 
     // Floating WhatsApp & Founder Trust Strip & Footer Details
     "float_wa_label": "تواصل معنا على WhatsApp",

@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="assets/css/styles.css?v=2.6">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2.7">
 
   <!-- Structured JSON-LD Data -->
   <script type="application/ld+json">
@@ -931,40 +931,91 @@
 
         <!-- 3-Field Demo Form Conversion Card -->
         <div class="cta-conversion-box fade-up">
-          <form onsubmit="event.preventDefault(); window.location.href='mailto:support@zaadsystem.com?subject=ZAAD%20POS%20Demo%20Request&body=Hello%20ZAAD%20POS%20Team,%0A%0AI%20would%20like%20to%20request%20a%20demo%20for%20my%20store.';">
+          <!-- Executive Header inside Card -->
+          <div class="cta-card-header">
+            <div class="cta-card-badge">
+              <span class="live-dot-pulse"></span>
+              <span data-i18n="cta_card_badge">⚡ تجربة حية مجانية • بدون أي شروط</span>
+            </div>
+            <h3 class="cta-card-title" data-i18n="cta_card_title">ابدأ تجربة نظام زاد في متجرك</h3>
+            <p class="cta-card-desc" data-i18n="cta_card_desc">املأ بيانات نشاطك وسنتواصل معك فوراً لتجهيز نسختك التجريبية وتدريبك عليها.</p>
+          </div>
+
+          <form id="demo-conversion-form">
             <!-- Field 1: Store Name -->
             <div class="cta-form-group">
-              <label class="cta-form-label" data-i18n="form_store_label">Business / Store Name</label>
-              <input type="text" class="cta-form-input" placeholder="e.g. Al-Belgiky Hypermarket" data-i18n-ph="form_store_ph" required>
+              <label class="cta-form-label" for="cta-store-name">
+                <span data-i18n="form_store_label">Business / Store Name</span>
+              </label>
+              <div class="cta-input-wrapper">
+                <span class="cta-input-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </span>
+                <input id="cta-store-name" type="text" class="cta-form-input" placeholder="e.g. Al-Belgiky Hypermarket" data-i18n-ph="form_store_ph" required>
+              </div>
             </div>
 
             <!-- Field 2: Phone / WhatsApp -->
             <div class="cta-form-group">
-              <label class="cta-form-label" data-i18n="form_contact_label">Contact Email or Phone</label>
-              <input type="text" class="cta-form-input" placeholder="e.g. owner@example.com or 010xxxxxxxx" data-i18n-ph="form_contact_ph" required>
+              <label class="cta-form-label" for="cta-store-contact">
+                <span data-i18n="form_contact_label">Contact Email or Phone</span>
+              </label>
+              <div class="cta-input-wrapper">
+                <span class="cta-input-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <input id="cta-store-contact" type="text" class="cta-form-input" placeholder="e.g. owner@example.com or 010xxxxxxxx" data-i18n-ph="form_contact_ph" required>
+              </div>
             </div>
 
             <!-- Field 3: Store Type -->
-            <div class="cta-form-group" style="margin-bottom:1.5rem;">
-              <label class="cta-form-label" data-i18n="form_type_label">Store Type</label>
-              <select class="cta-form-select">
-                <option data-i18n="form_type_opt1">Supermarket</option>
-                <option data-i18n="form_type_opt2">Hypermarket</option>
-                <option data-i18n="form_type_opt3">Minimarket / Grocery</option>
-                <option data-i18n="form_type_opt4">Retail Store</option>
-              </select>
+            <div class="cta-form-group">
+              <label class="cta-form-label" for="cta-store-type">
+                <span data-i18n="form_type_label">Store Type</span>
+              </label>
+              <div class="cta-input-wrapper cta-select-wrapper">
+                <span class="cta-input-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                </span>
+                <select id="cta-store-type" class="cta-form-select">
+                  <option data-i18n="form_type_opt1">Supermarket</option>
+                  <option data-i18n="form_type_opt2">Hypermarket</option>
+                  <option data-i18n="form_type_opt3">Minimarket / Grocery</option>
+                  <option data-i18n="form_type_opt4">Retail Store</option>
+                </select>
+                <span class="cta-select-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </div>
             </div>
 
             <!-- Actions Row: Primary Submit & Secondary WhatsApp -->
             <div class="cta-actions-row">
-              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;" data-i18n="cta_btn_primary">
-                Request Demo
+              <button type="submit" id="cta-submit-btn" class="btn btn-luxury-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span data-i18n="cta_btn_primary">اطلب Demo</span>
               </button>
 
-              <a href="https://wa.me/201029247516?text=Hello,%20I%20would%20like%20to%20request%20a%20demo%20for%20ZAAD%20POS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width:100%; justify-content:center;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <span data-i18n="cta_btn_wa">Connect via WhatsApp</span>
+              <a id="cta-wa-link" href="https://wa.me/201029247516?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9%20%D9%86%D8%B8%D8%A7%D9%85%20%D8%B2%D8%A7%D8%AF%20ZAAD%20POS%20%D9%84%D9%85%D8%AA%D8%AC%D8%B1%D9%8A." target="_blank" rel="noopener noreferrer" class="btn btn-luxury-wa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span data-i18n="cta_btn_wa">تواصل على WhatsApp</span>
               </a>
+            </div>
+
+            <!-- Micro Trust Ribbon -->
+            <div class="cta-trust-guarantees">
+              <span class="cta-trust-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cta_trust_instant">استجابة وتجهيز سريع</span>
+              </span>
+              <span class="cta-trust-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cta_trust_free">بدون أي التزام أو اشتراك</span>
+              </span>
+              <span class="cta-trust-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cta_trust_offline">يعمل Offline بالكامل</span>
+              </span>
             </div>
           </form>
         </div>
@@ -1076,7 +1127,7 @@
   </a>
 
   <!-- i18n Engine & Main JavaScript -->
-  <script src="assets/js/i18n.js?v=2.6"></script>
-  <script src="assets/js/main.js?v=2.6"></script>
+  <script src="assets/js/i18n.js?v=2.7"></script>
+  <script src="assets/js/main.js?v=2.7"></script>
 </body>
 </html>

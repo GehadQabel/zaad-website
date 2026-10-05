@@ -44,10 +44,50 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ------------------------------------------------------------------------
-  // 2. Scroll Progress Indicator & Navbar Behavior
+  // 2. Scroll Progress Indicator & Active Section ScrollSpy
   // ------------------------------------------------------------------------
   const progressBar = document.getElementById('scroll-progress');
   const navbar = document.querySelector('.navbar');
+
+  const sections = [
+    { id: 'hero', navHref: '#hero' },
+    { id: 'why-zaad', navHref: '#why-zaad' },
+    { id: 'daily-z', navHref: '#why-zaad' },
+    { id: 'shift-control', navHref: '#why-zaad' },
+    { id: 'accounts', navHref: '#why-zaad' },
+    { id: 'stocktaking', navHref: '#why-zaad' },
+    { id: 'purchase-receiving', navHref: '#why-zaad' },
+    { id: 'backup', navHref: '#why-zaad' },
+    { id: 'features', navHref: '#features' },
+    { id: 'security', navHref: '#security' },
+    { id: 'contact', navHref: '#contact' }
+  ];
+
+  const mainNavLinks = document.querySelectorAll('.nav-link');
+
+  function updateActiveNavLink() {
+    const scrollPos = window.scrollY + 120;
+    let currentNavHref = '#hero';
+
+    for (let i = sections.length - 1; i >= 0; i--) {
+      const sectionEl = document.getElementById(sections[i].id);
+      if (sectionEl) {
+        const top = sectionEl.offsetTop;
+        if (scrollPos >= top) {
+          currentNavHref = sections[i].navHref;
+          break;
+        }
+      }
+    }
+
+    mainNavLinks.forEach(link => {
+      if (link.getAttribute('href') === currentNavHref) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
 
   window.addEventListener('scroll', () => {
     // Scroll progress bar width
@@ -65,7 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.remove('scrolled');
       }
     }
+
+    updateActiveNavLink();
   });
+
+  updateActiveNavLink();
 
   // ------------------------------------------------------------------------
   // 3. Mobile Navigation Menu Toggle
@@ -80,39 +124,89 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenuBtn.setAttribute('aria-expanded', isOpen);
     });
 
-    // Close mobile menu when clicking links
-    navLinks.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
+    // Close mobile menu when clicking links or buttons
+    navLinks.querySelectorAll('.nav-link, button').forEach(item => {
+      item.addEventListener('click', () => {
         navLinks.classList.remove('mobile-open');
       });
     });
   }
 
   // ------------------------------------------------------------------------
-  // 4. Screenshot Lightbox Modal
+  // 4. Screenshot Lightbox Modal with Multi-Image Gallery Support
   // ------------------------------------------------------------------------
   const lightboxModal = document.getElementById('lightbox-modal');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxCaption = document.getElementById('lightbox-caption');
   const lightboxClose = document.querySelectorAll('.close-lightbox');
+  let lightboxPrevBtn = document.querySelector('.lightbox-nav-btn.prev');
+  let lightboxNextBtn = document.querySelector('.lightbox-nav-btn.next');
+  let lightboxCounter = document.getElementById('lightbox-counter');
+
+  let activeGalleryItems = [];
+  let currentGalleryIndex = 0;
+
+  function updateGalleryDisplay() {
+    if (activeGalleryItems.length === 0 || !lightboxImg) return;
+    const currentItem = activeGalleryItems[currentGalleryIndex];
+    const imgSrc = currentItem.getAttribute('data-lightbox-src') || currentItem.querySelector('img')?.src;
+    const caption = currentItem.getAttribute('data-lightbox-caption') || currentItem.querySelector('img')?.alt || 'ZAAD POS Screenshot';
+    
+    lightboxImg.src = imgSrc;
+    lightboxImg.alt = caption;
+    if (lightboxCaption) lightboxCaption.textContent = caption;
+
+    if (activeGalleryItems.length > 1) {
+      if (lightboxPrevBtn) lightboxPrevBtn.style.display = 'flex';
+      if (lightboxNextBtn) lightboxNextBtn.style.display = 'flex';
+      if (lightboxCounter) {
+        lightboxCounter.style.display = 'block';
+        lightboxCounter.textContent = `${currentGalleryIndex + 1} / ${activeGalleryItems.length}`;
+      }
+    } else {
+      if (lightboxPrevBtn) lightboxPrevBtn.style.display = 'none';
+      if (lightboxNextBtn) lightboxNextBtn.style.display = 'none';
+      if (lightboxCounter) lightboxCounter.style.display = 'none';
+    }
+  }
 
   const expandableScreenshots = document.querySelectorAll('[data-lightbox]');
 
   expandableScreenshots.forEach(item => {
     item.addEventListener('click', (e) => {
       e.preventDefault();
-      const imgSrc = item.getAttribute('data-lightbox-src') || item.querySelector('img')?.src;
-      const caption = item.getAttribute('data-lightbox-caption') || item.querySelector('img')?.alt || 'ZAAD POS Screenshot';
-      
-      if (imgSrc && lightboxImg && lightboxModal) {
-        lightboxImg.src = imgSrc;
-        lightboxImg.alt = caption;
-        if (lightboxCaption) lightboxCaption.textContent = caption;
+      const galleryName = item.getAttribute('data-lightbox-gallery');
+      if (galleryName) {
+        activeGalleryItems = Array.from(document.querySelectorAll(`[data-lightbox-gallery="${galleryName}"]`));
+        currentGalleryIndex = activeGalleryItems.indexOf(item);
+        if (currentGalleryIndex === -1) currentGalleryIndex = 0;
+      } else {
+        activeGalleryItems = [item];
+        currentGalleryIndex = 0;
+      }
+
+      updateGalleryDisplay();
+      if (lightboxModal) {
         lightboxModal.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
     });
   });
+
+  function showPrevImage() {
+    if (activeGalleryItems.length <= 1) return;
+    currentGalleryIndex = (currentGalleryIndex - 1 + activeGalleryItems.length) % activeGalleryItems.length;
+    updateGalleryDisplay();
+  }
+
+  function showNextImage() {
+    if (activeGalleryItems.length <= 1) return;
+    currentGalleryIndex = (currentGalleryIndex + 1) % activeGalleryItems.length;
+    updateGalleryDisplay();
+  }
+
+  if (lightboxPrevBtn) lightboxPrevBtn.addEventListener('click', showPrevImage);
+  if (lightboxNextBtn) lightboxNextBtn.addEventListener('click', showNextImage);
 
   function closeLightbox() {
     if (lightboxModal) {
@@ -161,11 +255,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Close modals on Escape key
+  // Close modals & Arrow Navigation on Keydown
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeLightbox();
       closeDemoModal();
+    }
+    if (lightboxModal && lightboxModal.classList.contains('active')) {
+      if (e.key === 'ArrowLeft') {
+        const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
+        isRtl ? showNextImage() : showPrevImage();
+      } else if (e.key === 'ArrowRight') {
+        const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
+        isRtl ? showPrevImage() : showNextImage();
+      }
     }
   });
 
@@ -186,5 +289,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOptions);
 
-  document.querySelectorAll('.fade-up').forEach(el => revealObserver.observe(el));
+  document.querySelectorAll('.fade-up, .customer-side-anim, .supplier-side-anim').forEach(el => revealObserver.observe(el));
 });

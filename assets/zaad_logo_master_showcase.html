@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZAAD POS â€” Ø§Ù„Ù…Ø¹Ø±Ø¶ Ø§Ù„Ø´Ø§Ù…Ù„ Ù„Ù„ÙˆØ¬ÙˆÙ‡Ø§Øª Ø§Ù„Ù…Ø¨ØªÙƒØ±Ø© ÙˆØ§Ù„Ø¹Ù…ÙŠÙ‚Ø©</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070c18;
+      --card: #0f172a;
+      --card-hover: #1e293b;
+      --accent: #10b981;
+      --accent-glow: rgba(16, 185, 129, 0.25);
+      --cyan: #06b6d4;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Cairo', 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 3rem 1.5rem;
+      line-height: 1.6;
+    }
+    .header {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 3.5rem;
+    }
+    .badge-tag {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 800;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+    }
+    .header h1 {
+      font-size: 2.3rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      color: var(--text);
+      background: linear-gradient(135deg, #ffffff 40%, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.25rem;
+      max-width: 1350px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2.25rem 2rem;
+      text-align: center;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent);
+      box-shadow: 0 20px 40px rgba(16, 185, 129, 0.18);
+      background: var(--card-hover);
+    }
+    .card-number {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-frame {
+      width: 100%;
+      height: 190px;
+      margin: 0 auto 1.75rem;
+      background: #050914;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+    .logo-frame svg {
+      max-width: 85%;
+      max-height: 80%;
+    }
+    .card h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 0.6rem;
+      color: var(--text);
+    }
+    .card .concept-tag {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+      display: block;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .footer-note {
+      text-align: center;
+      margin-top: 4rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <span class="badge-tag">MASTER BRANDING SHOWCASE</span>
+    <h1>Ø§Ù„Ù…Ø¹Ø±Ø¶ Ø§Ù„ØªÙØ§Ø¹Ù„ÙŠ Ø§Ù„Ø´Ø§Ù…Ù„ Ù„ÙˆØ¬ÙˆÙ‡Ø§Øª ZAAD Ùˆ ZAAD POS</h1>
+    <p>8 Ù…ÙØ§Ù‡ÙŠÙ… Ø¨ØµØ±ÙŠØ© Ù…Ø¨ØªÙƒØ±Ø© ÙˆØ¹Ù…ÙŠÙ‚Ø© ØªØ¯Ù…Ø¬ Ø§Ø³Ù… Ø§Ù„Ø¨Ø±Ø§Ù†Ø¯ Ù…Ø¹ Ø¹Ù†Ø§ØµØ± Ø§Ù„Ù‡Ø§ÙŠØ¨Ø±Ù…Ø§Ø±ÙƒØªØŒ Ù‡Ù†Ø¯Ø³Ø© Ø§Ù„Ø£Ù†Ø¸Ù…Ø©ØŒ Ø¹Ù„Ù… Ø§Ù„Ù†ÙØ³ Ø§Ù„Ø¨ØµØ±ÙŠØŒ ÙˆØ§Ù„Ø³Ø±Ø¹Ø© Ø§Ù„ØªØ´ØºÙŠÙ„ÙŠØ©.</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- CONCEPT 1: RETAIL BARCODE TYPOGRAPHY -->
+    <div class="card">
+      <span class="card-number">1</span>
+      <div class="logo-frame">
+        <svg viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Z made of barcode bars -->
+          <g fill="#10b981">
+            <rect x="25" y="20" width="45" height="7" rx="3.5"/>
+            <rect x="58" y="32" width="6" height="36" rx="3" transform="rotate(35 58 32)"/>
+            <rect x="25" y="73" width="45" height="7" rx="3.5"/>
+          </g>
+          <!-- A A D typography -->
+          <text x="85" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="4">AAD</text>
+          <!-- Barcode Accent below -->
+          <rect x="180" y="78" width="3" height="10" fill="#10b981"/>
+          <rect x="186" y="78" width="6" height="10" fill="#10b981"/>
+          <rect x="195" y="78" width="2" height="10" fill="#10b981"/>
+          <rect x="200" y="78" width="5" height="10" fill="#10b981"/>
+          <rect x="208" y="78" width="4" height="10" fill="#10b981"/>
+        </svg>
+      </div>
+      <span class="concept-tag">Ø¯Ù…Ø¬ Ø§Ù„Ø¨Ø§Ø±ÙƒÙˆØ¯ Ù…Ø¹ Ø§Ø³Ù… ZAAD</span>
+      <h3>1. Ø¨Ø§Ø±ÙƒÙˆØ¯ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª (Barcode ZAAD)</h3>
+      <p>ØµÙÙ…Ù… Ø­Ø±Ù Ø§Ù„Ù€ Z Ø§Ù„Ø£ÙˆÙ„ÙŠ Ù…Ù† Ø®Ø·ÙˆØ· Ø¨Ø§Ø±ÙƒÙˆØ¯ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ù…Ù†ØªØ¸Ù…Ø©. Ø§Ù„ÙÙ„Ø³ÙØ©: ÙƒÙ„ ØµÙ†Ù ÙÙŠ Ø§Ù„Ù‡Ø§ÙŠØ¨Ø±Ù…Ø§Ø±ÙƒØª ÙŠÙ‚Ø±Ø£ Ø¨Ø§Ù„Ø¨Ø§Ø±ÙƒÙˆØ¯ØŒ ÙˆZAAD Ù‡Ùˆ Ø§Ù„Ø¹Ù‚Ù„ Ø§Ù„Ø±Ù‚Ù…ÙŠ Ø§Ù„Ù…Ù†Ø¸Ù… Ù„ÙƒÙ„ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª.</p>
+    </div>
+
+    <!-- CONCEPT 2: HYPERMARKET TROLLEY WAVE -->
+    <div class="card">
+      <span class="card-number">2</span>
+      <div class="logo-frame">
+        <svg viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Trolley wheels -->
+          <circle cx="45" cy="82" r="5" fill="#10b981"/>
+          <circle cx="85" cy="82" r="5" fill="#10b981"/>
+          <!-- Trolley Basket Forming Z -->
+          <path d="M 25 25 H 95 L 45 68 H 95" stroke="#10b981" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 20 15 L 25 25" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+          <!-- Word AAD inside basket space -->
+          <text x="110" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="3">AAD</text>
+          <text x="235" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="700" fill="#10b981">POS</text>
+        </svg>
+      </div>
+      <span class="concept-tag">Ø¹Ø±Ø¨Ø© Ø§Ù„ØªØ³ÙˆÙ‚ ÙˆØ§Ù†Ø³ÙŠØ§Ø¨ÙŠØ© Ø§Ù„Ø´Ø±Ø§Ø¡</span>
+      <h3>2. Ø¹Ø±Ø¨Ø© Ø§Ù„ØªØ³ÙˆÙ‚ Ø§Ù„Ù€ Trolley Wave</h3>
+      <p>Ø´Ø±ÙŠØ· Ø§Ù†Ø³ÙŠØ§Ø¨ÙŠ ÙŠØ´ÙƒÙ„ Ù‡ÙŠÙƒÙ„ Ø¹Ø±Ø¨Ø© Ø§Ù„ØªØ³ÙˆÙ‚ ÙÙŠ Ø§Ù„Ù‡Ø§ÙŠØ¨Ø±Ù…Ø§Ø±ÙƒØª ÙˆÙŠÙ†Ø¯Ù…Ø¬ Ù…Ø¹ ÙƒÙ„Ù…Ø© ZAAD POS. Ø§Ù„ÙÙ„Ø³ÙØ©: Ø³Ù„Ø§Ø³Ø© Ø­Ø±ÙƒØ© Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª ÙˆØªØ¬Ø±Ø¨Ø© Ø§Ù„Ø´Ø±Ø§Ø¡ Ø§Ù„Ø³Ø±ÙŠØ¹Ø© Ù„Ù„Ø²Ø¨Ø§Ø¦Ù†.</p>
+    </div>
+
+    <!-- CONCEPT 3: THERMAL RECEIPT RIBBON -->
+    <div class="card">
+      <span class="card-number">3</span>
+      <div class="logo-frame">
+        <svg viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Thermal Receipt Ribbon Z -->
+          <path d="M 25 25 H 90 L 35 68 H 90" stroke="#10b981" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Receipt Serrations -->
+          <line x1="25" y1="20" x2="25" y2="30" stroke="#06b6d4" stroke-width="3" stroke-dasharray="2 2"/>
+          <line x1="90" y1="63" x2="90" y2="73" stroke="#06b6d4" stroke-width="3" stroke-dasharray="2 2"/>
+          <!-- AAD Text -->
+          <text x="105" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="46" font-weight="800" fill="#ffffff" letter-spacing="3">AAD</text>
+          <text x="225" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700" fill="#06b6d4">POS</text>
+        </svg>
+      </div>
+      <span class="concept-tag">ÙˆØ±Ù‚ Ø§Ù„ÙØ§ØªÙˆØ±Ø© Ø§Ù„Ø­Ø±Ø§Ø±ÙŠØ© ÙˆÙ‚Øµ Ø§Ù„ÙÙˆØ§ØªÙŠØ±</span>
+      <h3>3. Ø§Ù„ÙØ§ØªÙˆØ±Ø© Ø§Ù„Ø­Ø±Ø§Ø±ÙŠØ© (Thermal Tape ZAAD)</h3>
+      <p>Ø´Ø±ÙŠØ· Ù…Ù…ØªØ¯ ÙŠØ´Ø¨Ù‡ ÙˆØ±Ù‚ Ø§Ù„ÙÙˆØ§ØªÙŠØ± Ø§Ù„Ø­Ø±Ø§Ø±ÙŠØ© ÙŠÙ†Ø­Ù†ÙŠ Ø¨Ø²ÙˆØ§ÙŠØ§ Ù†Ø§ØµØ¹Ø© ÙŠØ´ÙƒÙ„ Ø­Ø±Ù Z Ù…Ø¹ Ø­ÙˆØ§Ù Ù…Ø´Ø±Ø´Ø±Ø© Ù„Ù‚Øµ Ø§Ù„ÙØ§ØªÙˆØ±Ø©. Ø§Ù„ÙÙ„Ø³ÙØ©: Ø§Ù„Ø´ÙØ§ÙÙŠØ© ÙˆØ§Ù„Ø¯Ù‚Ø© Ø§Ù„Ù…Ø§Ù„ÙŠØ© ÙÙŠ Ø·Ø¨Ø§Ø¹Ø© Ø§Ù„Ø­Ø³Ø§Ø¨Ø§Øª.</p>
+    </div>
+
+    <!-- CONCEPT 4: DATA VAULT & CHECKMARK -->
+    <div class="card">
+      <span class="card-number">4</span>
+      <div class="logo-frame">
+        <svg viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Vault Shield Tag -->
+          <rect x="25" y="20" width="65" height="60" rx="16" fill="none" stroke="#10b981" stroke-width="5"/>
+          <!-- Checkmark inside Z -->
+          <path d="M 38 35 H 78 L 45 65 H 78" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 48 50 L 58 60 L 80 38" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Text -->
+          <text x="105" y="63" font-family="'Plus Jakarta Sans', sans-serif" font-size="42" font-weight="800" fill="#ffffff" letter-spacing="2">AAD</text>
+          <text x="215" y="63" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700" fill="#10b981">POS</text>
+        </svg>
+      </div>
+      <span class="concept-tag">Ø£Ù…Ø§Ù† Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª ÙˆØ§Ù„ØªÙˆØ«ÙŠÙ‚ Ø§Ù„Ù…Ø§Ù„ÙŠ</span>
+      <h3>4. Ø®Ø²Ù†Ø© Ø£Ù…Ø§Ù† Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª (Data Vault ZAAD)</h3>
+      <p>Ø¯Ø±Ø¹ Ø£Ù…Ø§Ù† Ø°ÙƒÙŠ ÙŠØ­ØªÙˆÙŠ Ø¹Ù„Ù‰ Ø­Ø±Ù Z ÙˆØ¹Ù„Ø§Ù…Ø© ØµØ­ Ø§Ù„ØªÙˆØ«ÙŠÙ‚ (Checkmark). Ø§Ù„ÙÙ„Ø³ÙØ©: Ø§Ù„Ø£Ù…Ø§Ù† Ø§Ù„Ù…Ø·Ù„Ù‚ Ù„Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ù…ØªØ¬Ø± Ø§Ù„Ù…Ø­Ù„ÙŠØ©ØŒ Ø§Ù„Ø¹Ù‡Ø¯Ø©ØŒ ÙˆØªÙˆØ«ÙŠÙ‚ Ø¥ØºÙ„Ø§Ù‚ Ø§Ù„ÙˆØ±Ø¯ÙŠØ§Øª.</p>
+    </div>
+
+    <!-- CONCEPT 5: INFINITY GROWTH LOOP -->
+    <div class="card">
+      <span class="card-number">5</span>
+      <div class="logo-frame">
+        <svg viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Infinity Loop Monogram -->
+          <path d="M 40 30 C 20 30 20 70 40 70 C 60 70 60 30 80 30 C 100 30 100 70 80 70" stroke="#10b981" stroke-width="7" stroke-linecap="round"/>
+          <text x="95" y="64" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="3">AAD</text>
+          <text x="215" y="64" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700" fill="#10b981">POS</text>
+        </svg>
+      </div>
+      <span class="concept-tag">Ø§Ù„Ù†Ù…Ùˆ Ø§Ù„Ù„Ø§Ù†Ù‡Ø§Ø¦ÙŠ ÙˆØ§Ù„Ø£Ø±Ø¨Ø§Ø­ Ø§Ù„Ù…Ø³ØªÙ…Ø±Ø©</span>
+      <h3>5. Ø­Ù„Ù‚Ø© Ø§Ù„Ù†Ù…Ùˆ Ø§Ù„Ù„Ø§Ù†Ù‡Ø§Ø¦ÙŠ (Infinity Growth)</h3>
+      <p>Ø´Ø±ÙŠØ· Ø§Ù†Ø³ÙŠØ§Ø¨ÙŠ ÙŠØ´ÙƒÙ„ Ø­Ù„Ù‚Ø© Ø§Ù„Ù„Ø§Ù†Ù‡Ø§ÙŠØ© ($\infty$) ÙŠÙ†Ø­Øª Ø­Ø±ÙˆÙ Ø§Ù„Ø¨Ø±Ø§Ù†Ø¯. Ø§Ù„ÙÙ„Ø³ÙØ©: Ø§Ø³ØªÙ…Ø±Ø§Ø±ÙŠØ© ØªØ´ØºÙŠÙ„ Ø§Ù„Ù…ØªØ¬Ø± Ø¨Ø¯ÙˆÙ† ØªÙˆÙ‚Ù ÙˆØ§Ù„Ù†Ù…Ùˆ Ø§Ù„Ù…Ø³ØªÙ…Ø± ÙÙŠ Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª ÙˆØ§Ù„Ø£Ø±Ø¨Ø§Ø­.</p>
+    </div>
+
+    <!-- CONCEPT 6: DIGITAL SHELF PRICE LABEL -->
+    <div class="card">
+      <span class="card-number">6</span>
+      <div class="logo-frame">
+        <svg viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Digital Price Tag Frame -->
+          <path d="M 25 25 H 75 L 90 50 L 75 75 H 25 Z" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+          <circle cx="35" cy="50" r="4" fill="#10b981"/>
+          <!-- Z Inside Tag -->
+          <path d="M 45 35 H 70 L 48 65 H 72" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Text AAD -->
+          <text x="105" y="63" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="3">AAD</text>
+        </svg>
+      </div>
+      <span class="concept-tag">Ø¨Ø·Ø§Ù‚Ø§Øª ØªØ³Ø¹ÙŠØ± Ø£Ø±ÙÙ Ø§Ù„Ø³ÙˆØ¨Ø±Ù…Ø§Ø±ÙƒØª</span>
+      <h3>6. Ø¨Ø·Ø§Ù‚Ø© ØªØ³Ø¹ÙŠØ± Ø§Ù„Ø±Ù (Shelf Tag ZAAD)</h3>
+      <p>Ø¨Ø·Ø§Ù‚Ø© Ø§Ù„ØªØ³Ø¹ÙŠØ± Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠØ© Ø§Ù„Ù…Ø³ØªØ¹Ù…Ù„Ø© Ø¹Ù„Ù‰ Ø£Ø±ÙÙ Ø§Ù„Ù‡Ø§ÙŠØ¨Ø±Ù…Ø§Ø±ÙƒØª ÙˆØ¨Ø¯Ø§Ø®Ù„Ù‡Ø§ Ø§Ù„ØªØ´ÙƒÙŠÙ„ Ø§Ù„Ù…ÙØ±Øº Ù„Ø­Ø±Ù Z. Ø§Ù„ÙÙ„Ø³ÙØ©: Ø§Ù„Ø¯Ù‚Ø© Ø§Ù„Ù…ØªÙ†Ø§Ù‡ÙŠØ© ÙÙŠ Ø¥Ø¯Ø§Ø±Ø© Ø£Ø³Ø¹Ø§Ø± ÙˆÙ†ÙˆØ§Ù‚Øµ Ø§Ù„Ø£ØµÙ†Ø§Ù.</p>
+    </div>
+
+    <!-- CONCEPT 7: SCANNER LASER BEAM -->
+    <div class="card">
+      <span class="card-number">7</span>
+      <div class="logo-frame">
+        <svg viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="25" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="54" font-weight="900" fill="#ffffff" letter-spacing="4">ZAAD</text>
+          <!-- Glowing Laser Beam across word ZAAD -->
+          <path d="M 15 70 L 160 25" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+          <path d="M 15 70 L 160 25" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/>
+          <text x="185" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="26" font-weight="800" fill="#10b981">POS</text>
+        </svg>
+      </div>
+      <span class="concept-tag">Ø´Ø¹Ø§Ø¹ Ù„ÙŠØ²Ø± Ø§Ù„ÙƒØ§Ø´ÙŠØ± Ø§Ù„Ø³Ø±ÙŠØ¹</span>
+      <h3>7. Ù„ÙŠØ²Ø± Ø§Ù„Ù…Ø§Ø³Ø­ Ø§Ù„Ø¶ÙˆØ¦ÙŠ (Scanner Laser)</h3>
+      <p>Ø§Ø³Ù… Ø§Ù„Ø¨Ø±Ø§Ù†Ø¯ ZAAD ÙŠÙ‚Ø·Ø¹Ù‡ Ø´Ø¹Ø§Ø¹ Ù„ÙŠØ²Ø± Ù…Ø§Ø³Ø­ Ø§Ù„Ø¨Ø§Ø±ÙƒÙˆØ¯ Ø§Ù„Ø³Ø±ÙŠØ¹ Ø¨Ø§Ù„Ù„ÙˆÙ† Ø§Ù„Ø²Ù…Ø±Ø¯ÙŠ ÙˆØ§Ù„Ø³ÙŠØ§Ù†. Ø§Ù„ÙÙ„Ø³ÙØ©: Ø§Ù„Ø³Ø±Ø¹Ø© Ø§Ù„Ø®Ø§Ø·ÙØ© ÙÙŠ Ø¥Ù†Ù‡Ø§Ø¡ ÙÙˆØ§ØªÙŠØ± Ø§Ù„ÙƒØ§Ø´ÙŠØ± Ø®Ù„Ø§Ù„ Ø³Ø§Ø¹Ø§Øª Ø§Ù„Ø°Ø±ÙˆØ©.</p>
+    </div>
+
+    <!-- CONCEPT 8: SWISS QUIET LUXURY TYPOGRAPHY -->
+    <div class="card">
+      <span class="card-number">8</span>
+      <div class="logo-frame">
+        <svg viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="35" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="6">ZAAD</text>
+          <!-- Emerald Diamond Above A -->
+          <polygon points="122,20 128,28 122,36 116,28" fill="#10b981"/>
+          <text x="200" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700" fill="#94a3b8" letter-spacing="3">POS</text>
+        </svg>
+      </div>
+      <span class="concept-tag">Ø§Ù„ÙØ®Ø§Ù…Ø© Ø§Ù„Ø³ÙˆÙŠØ³Ø±ÙŠØ© ÙˆØ§Ù„Ø¨Ø³Ø§Ø·Ø© Ø§Ù„Ø¹Ø§Ù„ÙŠØ©</span>
+      <h3>8. Ø§Ù„ØªØ§ÙŠØ¨ÙˆØ¬Ø±Ø§ÙÙŠ Ø§Ù„Ø³ÙˆÙŠØ³Ø±ÙŠ (Swiss Quiet Luxury)</h3>
+      <p>Ø§Ø³Ù… ZAAD POS Ø§Ù„Ù…ÙƒØªÙˆØ¨ Ø¨ØªØ§ÙŠØ¨ÙˆØ¬Ø±Ø§ÙÙŠ Ø³ÙˆÙŠØ³Ø±ÙŠ Ù†Ø§ØµØ¹ ÙˆÙØ§Ø¦Ù‚ Ø§Ù„Ù†Ø¹ÙˆÙ…Ø© ØªØ¹Ù„ÙˆÙ‡ Ø£Ù„Ù…Ø§Ø³Ø© Ø²Ù…Ø±Ø¯ÙŠØ© Ø¯Ù‚ÙŠÙ‚Ø©. Ø§Ù„ÙÙ„Ø³ÙØ©: Ø§Ù„ÙØ®Ø§Ù…Ø© Ø§Ù„Ù‡Ø§Ø¯Ø¦Ø©ØŒ Ø§Ù„Ø¨Ø³Ø§Ø·Ø© Ø§Ù„Ù…Ø·Ù„Ù‚Ø©ØŒ ÙˆØ§Ù„Ø¬ÙˆØ¯Ø© Ø§Ù„Ø¹Ø§Ù„Ù…ÙŠØ©.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-note">
+    <p>ØªÙ… Ø­ÙØ¸ Ù‡Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ø¶ Ø§Ù„Ù…Ø¨Ø§Ø´Ø± Ø¹Ù„Ù‰ Ø¬Ù‡Ø§Ø²Ùƒ ÙÙŠ Ø§Ù„Ù…Ø³Ø§Ø±: <code>D:\Ai-Analytics\Ø³ÙˆØ¨Ø± Ù…Ø§Ø±ÙƒØª 2\zaad-website\assets\zaad_logo_master_showcase.html</code></p>
+  </div>
+
+</body>
+</html>

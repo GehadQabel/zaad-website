@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2.6">
 
   <!-- Structured JSON-LD Data -->
   <script type="application/ld+json">
@@ -69,18 +69,20 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#hero" class="nav-link active" data-i18n="nav_home">Home</a></li>
-          <li><a href="#workflow" class="nav-link" data-i18n="nav_workflow">Workflow</a></li>
-          <li><a href="#product" class="nav-link" data-i18n="nav_showcase">Showcase</a></li>
+          <li><a href="#why-zaad" class="nav-link" data-i18n="nav_why">Why ZAAD</a></li>
           <li><a href="#features" class="nav-link" data-i18n="nav_features">Features</a></li>
           <li><a href="#security" class="nav-link" data-i18n="nav_security">Security</a></li>
           <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+          <li class="mobile-cta-item">
+            <button type="button" class="btn btn-primary btn-mobile-cta" data-open-demo data-i18n="btn_request_demo">Request Demo</button>
+          </li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <!-- Language Switcher Toggle Button (AR | EN) -->
         <button type="button" class="lang-toggle-btn" aria-label="Switch Language">
-          <span style="font-weight:700;">العربية</span>
+          <span style="font-weight:700;">EN</span>
         </button>
 
         <!-- Dark/Light Theme Toggle Button -->
@@ -89,7 +91,7 @@
         </button>
 
         <!-- Request Demo CTA Button -->
-        <button type="button" class="btn btn-primary" data-open-demo data-i18n="btn_request_demo">Request Demo</button>
+        <button type="button" class="btn btn-primary nav-cta-btn" data-open-demo data-i18n="btn_request_demo">Request Demo</button>
         
         <!-- Mobile Menu Hamburger Button -->
         <button type="button" class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
@@ -100,22 +102,26 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
+    <!-- SECTION 1: HERO -->
     <section id="hero" class="hero-section">
       <div class="hero-container">
         <div class="section-tag fade-up">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <span data-i18n="hero_tag">Desktop Retail & Supermarket Management</span>
+          <span data-i18n="hero_eyebrow">Integrated Store Management System</span>
         </div>
         
-        <h1 class="hero-headline fade-up" data-i18n="hero_title">Retail Management. Built to Run the Store.</h1>
-        <p class="hero-subtitle fade-up" data-i18n="hero_subtitle">
-          ZAAD POS is a commercial desktop point-of-sale and retail management system engineered for supermarkets, hypermarkets, and modern retail operations. Fast checkout, local data control, cashier shift reconciliation, and Daily Z financial reporting.
+        <h1 class="hero-headline fade-up" data-i18n="hero_title">Your Entire Store Under Control.</h1>
+        <p class="hero-subtitle fade-up" style="color:var(--accent-emerald); font-weight:700; font-size:1.35rem; margin-bottom:0.75rem;" data-i18n="hero_title_sub">From the first barcode scan... to daily closing.</p>
+        <p class="hero-subtitle fade-up" data-i18n="hero_description">
+          ZAAD POS integrates sales, inventory, cashier shifts, customer debt, suppliers, stock counts, and financial movements into one unified desktop computer system engineered for supermarkets, hypermarkets, and retail stores.
+        </p>
+        <p class="hero-subtitle fade-up" style="font-weight:600; font-size:1.05rem; color:var(--text-main); margin-bottom:2rem;" data-i18n="hero_statement">
+          Fast during peak hours. Clear accounting. Your store data stays with you.
         </p>
 
         <div class="hero-actions fade-up">
           <button type="button" class="btn btn-primary" data-open-demo>
-            <span data-i18n="btn_request_demo">Request a Demo</span>
+            <span data-i18n="hero_cta_demo">Request a Demo</span>
             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </button>
           <a href="#features" class="btn btn-secondary" data-i18n="btn_explore_features">Explore Features</a>
@@ -123,471 +129,844 @@
 
         <div class="hero-trust-badges fade-up">
           <div class="trust-badge-item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
-            <span data-i18n="badge_desktop">Desktop-First Performance</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 14.14 14.14"/></svg>
+            <span data-i18n="badge_no_internet">â€¢ Works 100% Offline</span>
           </div>
           <div class="trust-badge-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            <span data-i18n="badge_local_data">100% Local Data Control</span>
+            <span data-i18n="badge_local_storage">â€¢ Data Stored Locally</span>
+          </div>
+          <div class="trust-badge-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h12"/><path d="M6 14h12"/><path d="M6 10h12"/><path d="M6 6h12"/></svg>
+            <span data-i18n="badge_barcode_thermal">â€¢ Barcode & Thermal Printing</span>
           </div>
           <div class="trust-badge-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            <span data-i18n="badge_daily_z">Daily Z Reporting</span>
-          </div>
-          <div class="trust-badge-item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
-            <span data-i18n="badge_inventory">Real-time Inventory Control</span>
+            <span data-i18n="badge_dailyz_auto">â€¢ Automated Daily Z</span>
           </div>
         </div>
 
-        <!-- Desktop Application Window Frame (Hero Mockup) -->
-        <div class="app-window-frame fade-up" data-lightbox data-lightbox-src="/assets/screenshots/pos-checkout.png" data-lightbox-caption="ZAAD POS - Main Cashier Checkout Screen">
-          <div class="window-header-bar">
-            <div class="window-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <span class="window-title" data-i18n="hero_mockup_title">ZAAD POS System — Point of Sale Checkout (Al-Belgiky Hypermarket)</span>
-            <div style="width: 40px;"></div>
+        <!-- Desktop Application Window Frame (Hero Mockup with 3 Floating Status Cards) -->
+        <div class="hero-window-wrapper fade-up">
+          <!-- Floating Status Card 1: Shift Open -->
+          <div class="floating-status-card status-card-tr">
+            <span class="status-pulse-dot"></span>
+            <span data-i18n="status_shift_open">الوردية مفتوحة ✓</span>
           </div>
-          <div class="app-screenshot-wrapper">
-            <img src="/assets/screenshots/pos-checkout.png" alt="ZAAD POS Main Checkout Screen" width="1280" height="720" loading="eager">
-            <div class="screenshot-zoom-overlay">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <span data-i18n="hero_mockup_zoom">Click to Expand High-Resolution Screenshot</span>
+
+          <!-- Floating Status Card 2: Daily Z Auto Time -->
+          <div class="floating-status-card status-card-tl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-i18n="status_dailyz_time">Daily Z تلقائي — 02:00 AM</span>
+          </div>
+
+          <!-- Floating Status Card 3: Stock Updated -->
+          <div class="floating-status-card status-card-br">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="status_stock_updated">المخزون محدث لحظيًا ✓</span>
+          </div>
+
+          <!-- Floating Status Card 4: 100% Offline Ready -->
+          <div class="floating-status-card status-card-bl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span data-i18n="status_offline_ready">يعمل 100% بدون إنترنت</span>
+          </div>
+
+          <div class="app-window-frame" data-lightbox data-lightbox-src="assets/screenshots/pos-checkout.png" data-lightbox-caption="ZAAD POS â€” Point of Sale Checkout Interface">
+            <div class="window-header-bar">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="window-title" data-i18n="hero_mockup_title">ZAAD POS System â€” Point of Sale Checkout (Al-Belgiky Hypermarket)</span>
+              <div style="width: 40px;"></div>
+            </div>
+            <div class="app-screenshot-wrapper">
+              <img src="assets/screenshots/pos-checkout.png" alt="ZAAD POS Main Checkout Screen" width="1280" height="720" loading="eager">
+              <div class="screenshot-zoom-overlay">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                <span data-i18n="hero_mockup_zoom">Click to expand high-resolution screenshot</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PRODUCT WORKFLOW SECTION -->
-    <section id="workflow" class="section-padding" style="background: var(--bg-secondary);">
+    <!-- SECTION 2: WHY ZAAD -->
+    <section id="why-zaad" class="section-padding" style="background: var(--bg-secondary);">
       <div class="container">
         <div class="section-header fade-up">
-          <div class="section-tag" data-i18n="workflow_tag">End-to-End Operational Lifecycle</div>
-          <h2 data-i18n="workflow_title">Designed for High-Speed Retail Workflow</h2>
-          <p data-i18n="workflow_subtitle">ZAAD POS seamlessly connects every operational phase of supermarket management into one unified desktop application.</p>
+          <div class="section-tag" data-i18n="nav_why">Why ZAAD</div>
+          <h2 data-i18n="why_title">Not Just Another POS Software.</h2>
+          <p style="color:var(--accent-emerald); font-weight:700; font-size:1.25rem; margin-top:0.25rem; margin-bottom:0.75rem;" data-i18n="why_subtitle_highlight">ZAAD Connects Your Entire Store Operation.</p>
+          <p data-i18n="why_desc">Every sale, purchase, collection, or expense directly impacts inventory, cash flow, and audit records.</p>
         </div>
 
-        <div class="workflow-grid">
-          <div class="workflow-card fade-up">
-            <div class="workflow-step-num">1</div>
-            <h3 data-i18n="workflow_step1_title">1. Sell</h3>
-            <p data-i18n="workflow_step1_desc">Fast barcode scanning, catalog search, split payments (Cash, Vodafone Cash, InstaPay, Visa), and instant thermal receipt printing.</p>
+        <div class="why-grid">
+          <div class="why-card fade-up">
+            <div class="why-card-num">01</div>
+            <h3 data-i18n="card1_title">Know Where Your Money Is</h3>
+            <p data-i18n="card1_desc">Track sales, collections, expenses, suppliers, and payment channels in one clear financial view.</p>
           </div>
-          <div class="workflow-card fade-up">
-            <div class="workflow-step-num">2</div>
-            <h3 data-i18n="workflow_step2_title">2. Track</h3>
-            <p data-i18n="workflow_step2_desc">Real-time stock deduction, inventory movements, customer credit debt tracking, supplier balances, and operational expenses.</p>
+
+          <div class="why-card fade-up">
+            <div class="why-card-num">02</div>
+            <h3 data-i18n="card2_title">Inventory Moves with Your Operations</h3>
+            <p data-i18n="card2_desc">Sales, purchases, returns, or counts â€” item stock remains directly tied to the transaction.</p>
           </div>
-          <div class="workflow-card fade-up">
-            <div class="workflow-step-num">3</div>
-            <h3 data-i18n="workflow_step3_title">3. Reconcile</h3>
-            <p data-i18n="workflow_step3_desc">Cashier shift opening and closing, active cash float verification, drawer duration, and shortage/surplus calculation.</p>
+
+          <div class="why-card fade-up">
+            <div class="why-card-num">03</div>
+            <h3 data-i18n="card3_title">Every Shift Has an Assigned Operator</h3>
+            <p data-i18n="card3_desc">From opening float to actual cash in drawer, expected balances, and shortage or surplus.</p>
           </div>
-          <div class="workflow-card fade-up">
-            <div class="workflow-step-num">4</div>
-            <h3 data-i18n="workflow_step4_title">4. Report</h3>
-            <p data-i18n="workflow_step4_desc">Authoritative Daily Z financial business-day summaries with breakdown by payment channel and automated PDF report delivery.</p>
-          </div>
-          <div class="workflow-card fade-up">
-            <div class="workflow-step-num">5</div>
-            <h3 data-i18n="workflow_step5_title">5. Backup</h3>
-            <p data-i18n="workflow_step5_desc">Local SQLite database backups with one-click database restoration workflows to keep business data safe on store premises.</p>
+
+          <div class="why-card fade-up">
+            <div class="why-card-num">04</div>
+            <h3 data-i18n="card4_title">Your Store Data Stays Yours</h3>
+            <p data-i18n="card4_desc">Core operations and sensitive business records are stored 100% locally on your store computer.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PRODUCT SHOWCASE (REAL SCREENSHOTS) -->
-    <section id="product" class="section-padding">
+    <!-- SECTION 3: DAILY Z -->
+    <section id="daily-z" class="section-padding">
       <div class="container">
         <div class="section-header fade-up">
-          <div class="section-tag" data-i18n="showcase_tag">Production Software Interface</div>
-          <h2 data-i18n="showcase_title">Explore the Real ZAAD POS Experience</h2>
-          <p data-i18n="showcase_subtitle">Inspect authentic screenshots of ZAAD POS in active retail store operation.</p>
+          <div class="section-tag" data-i18n="dailyz_eyebrow">From Day Start... to Every Single Pound</div>
+          <h2 data-i18n="dailyz_title">At the End of the Day... Know Exactly What Happened.</h2>
+          <p data-i18n="dailyz_desc">Instead of piecing together numbers from multiple screens, ZAAD summarizes the commercial business day into one clear Daily Z: previous balance, today's money in, today's money out, and current balance â€” with transaction details and payment channels.</p>
         </div>
 
-        <!-- Showcase 1: Main Checkout -->
-        <div class="showcase-row fade-up">
-          <div class="app-window-frame" data-lightbox data-lightbox-src="/assets/screenshots/pos-checkout.png" data-lightbox-caption="Main POS Checkout Interface">
-            <div class="window-header-bar">
-              <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
-              <span class="window-title">Point of Sale Checkout</span>
+        <!-- 4 Financial Flow Checkpoints Grid -->
+        <div class="financial-flow-container fade-up">
+          <div class="financial-flow-grid">
+            <div class="flow-card">
+              <div class="flow-card-num">01</div>
+              <div class="flow-card-title" data-i18n="flow_step1">Yesterday's Balance</div>
             </div>
-            <div class="app-screenshot-wrapper">
-              <img src="/assets/screenshots/pos-checkout.png" alt="POS Checkout Screen" loading="lazy">
-              <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Expand View</span></div>
+            <div class="flow-card in">
+              <div class="flow-card-num">02</div>
+              <div class="flow-card-title" data-i18n="flow_step2">Today's Money In</div>
+            </div>
+            <div class="flow-card out">
+              <div class="flow-card-num">03</div>
+              <div class="flow-card-title" data-i18n="flow_step3">Today's Money Out</div>
+            </div>
+            <div class="flow-card available">
+              <div class="flow-card-num">04</div>
+              <div class="flow-card-title" data-i18n="flow_step4">Current Available</div>
             </div>
           </div>
-          <div class="showcase-content">
-            <h3 data-i18n="showcase1_title">Fast, High-Volume Point of Sale</h3>
-            <p data-i18n="showcase1_desc">Designed for rapid cashier throughput during peak retail hours with full barcode support and instant item selection.</p>
-            <ul class="showcase-list">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase1_item1">Instant barcode scanning and search catalog with category filters</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase1_item2">Multi-channel payment options: Cash, Vodafone Cash, InstaPay, Visa & Credit</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase1_item3">Customer cash change calculator and instant invoice completion</span>
-              </li>
-            </ul>
+
+          <!-- Gmail Delivery Banner -->
+          <div class="gmail-banner">
+            <span class="gmail-badge" data-i18n="dailyz_email_badge">ðŸ“§ Automated Gmail Delivery</span>
+            <span style="color:var(--text-main); font-weight:600;" data-i18n="dailyz_email_text">And at day end? The report can be automatically delivered to the store owner.</span>
           </div>
         </div>
 
-        <!-- Showcase 2: Thermal Receipt Modal -->
-        <div class="showcase-row reverse fade-up">
-          <div class="showcase-content">
-            <h3 data-i18n="showcase2_title">Operational Thermal Receipts & Printing</h3>
-            <p data-i18n="showcase2_desc">Generates clean, accurate thermal receipts formatted specifically for 58mm and 80mm receipt printers.</p>
-            <ul class="showcase-list">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase2_item1">Complete store header branding, phone number, and customizable tagline</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase2_item2">Itemized list showing quantity, price, discount, service fees, and totals</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase2_item3">Direct thermal printer integration with instant keyboard shortcut (Ctrl+P)</span>
-              </li>
-            </ul>
-          </div>
-          <div class="app-window-frame" data-lightbox data-lightbox-src="/assets/screenshots/receipt-modal.png" data-lightbox-caption="Thermal Receipt Print Preview Modal">
-            <div class="window-header-bar">
-              <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
-              <span class="window-title">Thermal Receipt Print Preview</span>
+        <!-- Multi-page Daily Z Report Visual (Page 1 Front, Page 2 Back Stack) -->
+        <div class="report-stack-wrapper fade-up">
+          <div class="report-stack">
+            <!-- Page 2 (Back Offset) -->
+            <div class="app-window-frame report-page-back" data-lightbox data-lightbox-gallery="dailyz" data-lightbox-src="assets/screenshots/dailyz-page2.png" data-lightbox-caption="ZAAD POS â€” Daily Z Report (Page 2: Summary Breakdown & Debt)">
+              <div class="window-header-bar">
+                <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+                <span class="window-title" data-i18n="dailyz_page2_label">تقرير Z اليومي — الصفحة 2</span>
+              </div>
+              <div class="app-screenshot-wrapper">
+                <img src="assets/screenshots/dailyz-page2.png" alt="Daily Z Report Page 2" loading="lazy">
+              </div>
             </div>
-            <div class="app-screenshot-wrapper">
-              <img src="/assets/screenshots/receipt-modal.png" alt="Thermal Receipt Preview Modal" loading="lazy">
-              <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Expand View</span></div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Showcase 3: Invoice History -->
-        <div class="showcase-row fade-up">
-          <div class="app-window-frame" data-lightbox data-lightbox-src="/assets/screenshots/invoice-history.png" data-lightbox-caption="Sales Invoice Register & Filter Screen">
-            <div class="window-header-bar">
-              <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
-              <span class="window-title">Comprehensive Sales Invoices Register</span>
-            </div>
-            <div class="app-screenshot-wrapper">
-              <img src="/assets/screenshots/invoice-history.png" alt="Sales Invoices Register" loading="lazy">
-              <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Expand View</span></div>
-            </div>
-          </div>
-          <div class="showcase-content">
-            <h3 data-i18n="showcase3_title">Full Sales History & Transaction Audit</h3>
-            <p data-i18n="showcase3_desc">Every sale is recorded in a searchable audit register with instant filtering and return status tracking.</p>
-            <ul class="showcase-list">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase3_item1">Filter transactions by invoice number, date range, or payment status</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase3_item2">Track full payments, partial returns, and debt settlements</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase3_item3">One-click invoice reprint and detailed view modal</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Showcase 4: Shift Management -->
-        <div class="showcase-row reverse fade-up">
-          <div class="showcase-content">
-            <h3 data-i18n="showcase4_title">Operative Shift Management & Control</h3>
-            <p data-i18n="showcase4_desc">Protects store revenue by enforcing structured cashier shift opening, duration tracking, and closing reconciliation.</p>
-            <ul class="showcase-list">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase4_item1">Clear operator identification and business-day association</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase4_item2">Live shift duration timer and drawer status monitoring</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span data-i18n="showcase4_item3">Secure shift closing drawer lock and shift archive lookup</span>
-              </li>
-            </ul>
-          </div>
-          <div class="app-window-frame" data-lightbox data-lightbox-src="/assets/screenshots/shift-management.png" data-lightbox-caption="Cashier Shift Control Management Modal">
-            <div class="window-header-bar">
-              <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
-              <span class="window-title">Operative Shift Control</span>
-            </div>
-            <div class="app-screenshot-wrapper">
-              <img src="/assets/screenshots/shift-management.png" alt="Shift Control Modal" loading="lazy">
-              <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Expand View</span></div>
+            <!-- Page 1 (Front Active) -->
+            <div class="app-window-frame report-page-front" data-lightbox data-lightbox-gallery="dailyz" data-lightbox-src="assets/screenshots/dailyz-page1.png" data-lightbox-caption="ZAAD POS â€” Daily Z Report (Page 1: Financial Flow Checkpoints & Payments)">
+              <div class="window-header-bar">
+                <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+                <span class="window-title" data-i18n="dailyz_proof_label">Authentic Report Issued by ZAAD POS â€” Page 1</span>
+              </div>
+              <div class="app-screenshot-wrapper">
+                <img src="assets/screenshots/dailyz-page1.png" alt="Daily Z Report Page 1" loading="lazy">
+                <div class="screenshot-zoom-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span data-i18n="hero_mockup_zoom">Click to expand multi-page report gallery</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FEATURES SECTION GRID -->
-    <section id="features" class="section-padding" style="background: var(--bg-secondary);">
+    <!-- SECTION 4: SHIFT CONTROL -->
+    <section id="shift-control" class="section-padding">
       <div class="container">
         <div class="section-header fade-up">
-          <div class="section-tag" data-i18n="features_tag">Core Engine Capabilities</div>
-          <h2 data-i18n="features_title">Complete Retail Management Capabilities</h2>
-          <p data-i18n="features_subtitle">Everything required to operate modern supermarkets and retail stores safely and efficiently.</p>
+          <div class="section-tag" data-i18n="shift_eyebrow">Shift Audit & Control</div>
+          <h2 data-i18n="shift_title">Every Shift Reconciled to the Last Pound.</h2>
+          <p style="color:var(--accent-emerald); font-weight:700; font-size:1.25rem; margin-top:0.25rem; margin-bottom:0.75rem;" data-i18n="shift_subtitle_highlight">From float handover... to cash drawer reconciliation.</p>
+          <p data-i18n="shift_desc1">At shift closing, ZAAD aggregates cashier sales, calculates expected drawer cash, compares it with actual cash entered, and highlights matching status, shortage, or surplus.</p>
+          <p style="margin-top:0.5rem;" data-i18n="shift_desc2">After closing, the shift remains archived with date, responsible cashier, duration, and financials for audit whenever needed.</p>
         </div>
 
-        <div class="features-grid">
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+        <!-- 2-Stage Shift Control Workflow Visual Story -->
+        <div class="shift-workflow-story fade-up">
+          <!-- Stage 1: Shift Closing Modal -->
+          <div class="shift-stage-card">
+            <div class="shift-stage-badge" data-i18n="shift_step1_label">1 — راجع وطابق</div>
+            <div class="app-window-frame" data-lightbox data-lightbox-gallery="shift" data-lightbox-src="assets/screenshots/shift-closing.png" data-lightbox-caption="ZAAD POS — إغلاق الوردية وتقفيل الخزينة">
+              <div class="window-header-bar">
+                <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+                <span class="window-title" data-i18n="shift_modal_title">إغلاق الوردية وتقفيل الخزينة</span>
+              </div>
+              <div class="app-screenshot-wrapper">
+                <img src="assets/screenshots/shift-closing.png" alt="Shift Closing Modal" loading="lazy">
+                <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Expand View</span></div>
+              </div>
             </div>
-            <h3 data-i18n="feat_pos_title">Point of Sale</h3>
-            <p data-i18n="feat_pos_desc">Rapid barcode scanning, product catalog search, multiple payment channels, split billing, and instant thermal printing.</p>
+            <div class="shift-tags-row">
+              <span class="shift-tag-item" data-i18n="shift_tag_expected">Expected Cash in Drawer</span>
+              <span class="shift-tag-item" data-i18n="shift_tag_actual">Actual Cash Counted</span>
+              <span class="shift-tag-item" style="color:var(--accent-emerald);" data-i18n="shift_tag_diff">Shortage / Surplus</span>
+            </div>
           </div>
 
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
-            </div>
-            <h3 data-i18n="feat_inv_title">Inventory Management</h3>
-            <p data-i18n="feat_inv_desc">Real-time stock deduction, movement tracking, category organization, low-stock warnings, and barcode generation.</p>
+          <!-- Transition Connector Badge -->
+          <div class="shift-connector">
+            <div class="shift-connector-pill" data-i18n="shift_trans_badge">تمت المطابقة ✓ ← تم حفظ الوردية</div>
           </div>
 
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <!-- Stage 2: Shift Archive Modal -->
+          <div class="shift-stage-card">
+            <div class="shift-stage-badge" data-i18n="shift_step2_label">2 — ارجع لها في أي وقت</div>
+            <div class="app-window-frame" data-lightbox data-lightbox-gallery="shift" data-lightbox-src="assets/screenshots/shift-archive.png" data-lightbox-caption="ZAAD POS — أرشيف وسجل الشفتات المقفلة">
+              <div class="window-header-bar">
+                <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+                <span class="window-title" data-i18n="shift_archive_title">أرشيف وسجل الشفتات المقفلة</span>
+              </div>
+              <div class="app-screenshot-wrapper">
+                <img src="assets/screenshots/shift-archive.png" alt="Shift Archive Register" loading="lazy">
+                <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Expand View</span></div>
+              </div>
             </div>
-            <h3 data-i18n="feat_pur_title">Purchases & Suppliers</h3>
-            <p data-i18n="feat_pur_desc">Track supplier invoices, incoming shipments, payment histories, outstanding supplier balances, and procurement records.</p>
+          </div>
+        </div>
+
+        <!-- Final Statement Banner -->
+        <div class="shift-final-banner fade-up" data-i18n="shift_final_statement">
+          Every shift has an operator. Every variance has a number. Every closing has an audit record.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CUSTOMER CREDIT + SUPPLIER ACCOUNTS -->
+    <section id="accounts" class="section-padding">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag" data-i18n="accounts_eyebrow">Customer & Supplier Accounting</div>
+          <h2 data-i18n="accounts_title">Every pound owed to you... and owed by you, precisely accounted for.</h2>
+          <p data-i18n="accounts_subtitle">From customer credit accounts to supplier balances, ZAAD records every invoice, payment, and return in a clear ledger with exact timestamps and balances.</p>
+        </div>
+
+        <!-- Premium Split Story Layout -->
+        <div class="accounts-split-container">
+          <!-- RIGHT SIDE — CUSTOMER ACCOUNT STORY -->
+          <div class="account-story-side customer-side-anim fade-up">
+            <div class="account-story-header">
+              <h3 data-i18n="acc_customer_title">Money with a customer? Their full statement is right in front of you.</h3>
+              <p data-i18n="acc_customer_subtitle">Credit sales, collections, returns, and a daily transaction ledger.</p>
+            </div>
+
+            <div class="account-callout-tags">
+              <span class="acc-tag" data-i18n="acc_tag_credit_sale">Credit Sale</span>
+              <span class="acc-tag" data-i18n="acc_tag_collections">Collections</span>
+              <span class="acc-tag" data-i18n="acc_tag_returns">Returns</span>
+              <span class="acc-tag amber" data-i18n="acc_tag_date_filter">Date Filter</span>
+            </div>
+
+            <!-- Customer Account Real Screenshot Window -->
+            <div class="app-window-frame" data-lightbox data-lightbox-gallery="accounts" data-lightbox-src="assets/screenshots/customer-account.png" data-lightbox-caption="ZAAD POS — Customer Credit Account Statement Modal">
+              <div class="window-header-bar">
+                <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+                <span class="window-title" data-i18n="acc_cust_window_title">كشف حساب عميل آجل</span>
+              </div>
+              <div class="app-screenshot-wrapper">
+                <img src="assets/screenshots/customer-account.png" alt="Customer Account Statement Modal" loading="lazy">
+                <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Click to expand high-resolution screenshot</span></div>
+              </div>
+            </div>
           </div>
 
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <!-- LEFT SIDE — SUPPLIER ACCOUNT STORY -->
+          <div class="account-story-side supplier-side-anim fade-up">
+            <div class="account-story-header">
+              <h3 data-i18n="acc_supplier_title">Owe money to a supplier? Never lost in a sea of invoices.</h3>
+              <p data-i18n="acc_supplier_subtitle">Shipments, payments, returns, and outstanding balance in a single statement.</p>
             </div>
-            <h3 data-i18n="feat_credit_title">Customer Credit & Debt</h3>
-            <p data-i18n="feat_credit_desc">Manage customer credit accounts, track unpaid balances, record partial payments, and issue debt receipts.</p>
+
+            <div class="account-callout-tags">
+              <span class="acc-tag" data-i18n="acc_tag_shipments">Shipments</span>
+              <span class="acc-tag" data-i18n="acc_tag_payments">Payments</span>
+              <span class="acc-tag" data-i18n="acc_tag_supplier_returns">Returns</span>
+              <span class="acc-tag amber" data-i18n="acc_tag_balance_due">Outstanding Balance</span>
+            </div>
+
+            <!-- Supplier Account Real Screenshot Window -->
+            <div class="app-window-frame" data-lightbox data-lightbox-gallery="accounts" data-lightbox-src="assets/screenshots/supplier-account.png" data-lightbox-caption="ZAAD POS — Supplier Account Statement & Transaction History Modal">
+              <div class="window-header-bar">
+                <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+                <span class="window-title" data-i18n="acc_supp_window_title">كشف حساب ومستحقات المورد</span>
+              </div>
+              <div class="app-screenshot-wrapper">
+                <img src="assets/screenshots/supplier-account.png" alt="Supplier Account Statement Modal" loading="lazy">
+                <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Click to expand high-resolution screenshot</span></div>
+              </div>
+            </div>
           </div>
 
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <!-- CENTER CONNECTING BADGE -->
+          <div class="accounts-center-connector fade-up">
+            <div class="connector-badge-pill" data-i18n="acc_badge_connector">
+              Every transaction ← with date ← with balance ← with details
             </div>
-            <h3 data-i18n="feat_exp_title">Operational Expenses</h3>
-            <p data-i18n="feat_exp_desc">Log store expenses, utility bills, maintenance costs, and petty cash withdrawals to maintain complete financial clarity.</p>
+          </div>
+        </div>
+
+        <!-- Closing Statement Banner -->
+        <div class="accounts-final-statement fade-up" data-i18n="acc_final_statement">
+          Instead of fragmented notebooks... every account has a ledger, and every movement leaves a trace.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: INVENTORY COUNT / STOCKTAKING -->
+    <section id="stocktaking" class="section-padding">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag" data-i18n="stock_eyebrow">Inventory Count & Stock Audit</div>
+          <h2 data-i18n="stock_title">Count your inventory... without starting from scratch every time.</h2>
+          <p data-i18n="stock_subtitle">Start a count session and scan barcodes or search by name. ZAAD instantly compares physical quantities against system stock, revealing matching items, shortages, and surpluses before committing stock adjustments.</p>
+        </div>
+
+        <!-- Product Visual Layout (Primary Active Session + Secondary Overlapping Result Window) -->
+        <div class="stocktaking-visual-wrapper fade-up">
+          <!-- Primary Active Session Screenshot Window -->
+          <div class="app-window-frame stock-primary-frame" data-lightbox data-lightbox-gallery="stocktaking" data-lightbox-src="assets/screenshots/inventory-count-active.png" data-lightbox-caption="ZAAD POS — Active Inventory Stocktaking Session (Barcode & Search Audit)">
+            <div class="window-header-bar">
+              <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+              <span class="window-title" data-i18n="stock_active_window_title">جلسة الجرد المباشر وتدقيق الأصناف</span>
+            </div>
+            <div class="app-screenshot-wrapper">
+              <img src="assets/screenshots/inventory-count-active.png" alt="Active Stocktaking Audit Session Screen" loading="lazy">
+              <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Click to expand high-resolution screenshot</span></div>
+            </div>
           </div>
 
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/></svg>
+          <!-- Secondary Overlapping Final Result Screenshot Window -->
+          <div class="app-window-frame stock-secondary-frame" data-lightbox data-lightbox-gallery="stocktaking" data-lightbox-src="assets/screenshots/inventory-count-result.png" data-lightbox-caption="ZAAD POS — Final Inventory Adjustment Council & Summary Modal">
+            <div class="window-header-bar">
+              <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+              <span class="window-title" data-i18n="stock_result_window_title">محضر تسوية واعتماد فروق الجرد</span>
             </div>
-            <h3 data-i18n="feat_count_title">Guided Inventory Count</h3>
-            <p data-i18n="feat_count_desc">Physical inventory counting tool with stock variance calculation and controlled adjustment posting.</p>
+            <div class="app-screenshot-wrapper">
+              <img src="assets/screenshots/inventory-count-result.png" alt="Final Stock Adjustment Council Modal" loading="lazy">
+              <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Click to expand high-resolution screenshot</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Two Feature Callout Blocks -->
+        <div class="stock-callout-grid">
+          <div class="stock-callout-card fade-up">
+            <div class="stock-callout-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10l4.5 4.5"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <h3 data-i18n="stock_callout1_title">Paused your count? Pick up right where you left off.</h3>
+            <p data-i18n="stock_callout1_desc">Draft stock counts are saved locally and can be resumed even after restarting the application.</p>
           </div>
 
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div class="stock-callout-card fade-up">
+            <div class="stock-callout-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
             </div>
-            <h3 data-i18n="feat_shift_title">Shift Management</h3>
-            <p data-i18n="feat_shift_desc">Structured cashier shift opening/closing, active drawer float monitoring, and shift duration records.</p>
+            <h3 data-i18n="stock_callout2_title">Performing a partial count? Uncounted stock remains untouched.</h3>
+            <p data-i18n="stock_callout2_desc">When committing the audit, only counted items are updated—all uncounted catalog items stay completely untouched.</p>
           </div>
+        </div>
 
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            </div>
-            <h3 data-i18n="feat_dailyz_title">Daily Z Reporting</h3>
-            <p data-i18n="feat_dailyz_desc">Authoritative business-day reports summarizing total sales, payment channel breakdown, expenses, and net profit.</p>
+        <!-- Inventory State Sequence Visual -->
+        <div class="stock-sequence-container fade-up">
+          <div class="stock-state-sequence">
+            <span class="state-pill state-matching" data-i18n="stock_state_matching">Matching ✓</span>
+            <span class="sequence-arrow">→</span>
+            <span class="state-pill state-shortage" data-i18n="stock_state_shortage">Shortage (-)</span>
+            <span class="sequence-arrow">→</span>
+            <span class="state-pill state-surplus" data-i18n="stock_state_surplus">Surplus (+)</span>
           </div>
-
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
-            <h3 data-i18n="feat_backup_title">Local Backup & Restore</h3>
-            <p data-i18n="feat_backup_desc">Local SQLite database snapshot backups and controlled restoration workflows to prevent data loss.</p>
-          </div>
-
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            </div>
-            <h3 data-i18n="feat_email_title">Automated Email Reports</h3>
-            <p data-i18n="feat_email_desc">Optional automated Daily Z PDF report delivery directly to store owner emails via Google OAuth 2.0.</p>
-          </div>
-
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
-            </div>
-            <h3 data-i18n="feat_pay_title">Multiple Payment Channels</h3>
-            <p data-i18n="feat_pay_desc">Full support for Cash, Vodafone Cash, InstaPay, Visa, and Customer Debt billing on every invoice.</p>
-          </div>
-
-          <div class="feature-card fade-up">
-            <div class="feature-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3 data-i18n="feat_perm_title">Staff Role Permissions</h3>
-            <p data-i18n="feat_perm_desc">Restricted cashier access, protected manager actions, and activity accountability.</p>
+          <div>
+            <span class="stock-final-callout" data-i18n="stock_final_callout">See the difference first... then adjust stock when you're ready.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECURITY & GOOGLE OAUTH TRANSPARENCY SECTION -->
+    <!-- SECTION 7: PURCHASE RECEIVING & MULTI-PAYMENT -->
+    <section id="purchase-receiving" class="section-padding">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag" data-i18n="pur_eyebrow">Smart Procurement & Package Receiving</div>
+          <h2 data-i18n="pur_title">Receive by the carton... and let ZAAD calculate the pieces.</h2>
+          <p data-i18n="pur_subtitle">Select how the item is received and the number of pieces per package, then enter the number of packages purchased. ZAAD automatically converts it into the actual piece quantity entering inventory.</p>
+        </div>
+
+        <!-- Video Presentation Container -->
+        <div class="pur-video-container fade-up">
+
+          <!-- Desktop Software Product Frame with Video -->
+          <div class="app-window-frame pur-video-frame">
+            <div class="window-header-bar">
+              <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+              <span class="window-title" data-i18n="pur_video_title">نظام ZAAD POS — استلام فواتير الشراء وتحويل العبوات تلقائيًا</span>
+            </div>
+            <div class="app-screenshot-wrapper">
+              <video src="assets/videos/purchase-receiving.mp4" autoplay loop muted playsinline aria-label="ZAAD POS Purchase Receiving Demo Video"></video>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculation Equation Visual -->
+        <div class="pur-equation-wrapper fade-up">
+          <div class="pur-equation-grid">
+            <div class="pur-eq-card" data-i18n="pur_eq_cartons">2 Cartons</div>
+            <div class="pur-eq-operator" data-i18n="pur_eq_multiplier">× 24 Pieces</div>
+            <div class="pur-eq-card total" data-i18n="pur_eq_total">= 48 Pieces in Inventory</div>
+          </div>
+          <div class="pur-eq-note" data-i18n="pur_eq_note">Explanatory example — package unit sizes can be customized per product.</div>
+        </div>
+
+        <!-- Visual Flow Sequence -->
+        <div class="pur-flow-container fade-up">
+          <span class="pur-flow-step" data-i18n="pur_flow_step1">Goods Receiving</span>
+          <span class="pur-flow-arrow">→</span>
+          <span class="pur-flow-step" data-i18n="pur_flow_step2">Carton Quantity</span>
+          <span class="pur-flow-arrow">→</span>
+          <span class="pur-flow-step" data-i18n="pur_flow_step3">Pieces per Package</span>
+          <span class="pur-flow-arrow">→</span>
+          <span class="pur-flow-step" data-i18n="pur_flow_step4">Auto Conversion</span>
+          <span class="pur-flow-arrow">→</span>
+          <span class="pur-flow-step" style="border-color:var(--accent-emerald); color:var(--accent-emerald);" data-i18n="pur_flow_step5">Inventory Update</span>
+        </div>
+
+        <!-- Multi-Payment Block -->
+        <div class="pur-payment-block fade-up">
+          <h3 data-i18n="pur_pay_title">And the supplier invoice? Split payment exactly as it actually happened.</h3>
+          <p data-i18n="pur_pay_subtitle">Record purchase invoice payments across multiple supported payment channels when needed, so recorded transactions match actual funds paid.</p>
+
+          <div class="pur-payment-pills">
+            <div class="payment-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/></svg>
+              <span data-i18n="pur_pay_cash">Cash</span>
+            </div>
+            <div class="payment-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+              <span data-i18n="pur_pay_voda">Vodafone Cash</span>
+            </div>
+            <div class="payment-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <span data-i18n="pur_pay_insta">InstaPay</span>
+            </div>
+            <div class="payment-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+              <span data-i18n="pur_pay_visa">Visa</span>
+            </div>
+            <div class="payment-pill" style="border-color:rgba(245,158,11,0.4); color:#f59e0b;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span data-i18n="pur_pay_debt">Supplier Credit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final Closing Line Banner -->
+        <div class="pur-final-statement fade-up" data-i18n="pur_final_statement">
+          From carton receiving... to the last piece entering inventory, ZAAD handles the math.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: BACKUP & RESTORE SHOWCASE -->
+    <section id="backup" class="section-padding">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag" data-i18n="backup_eyebrow">Data Safety & Business Continuity</div>
+          <h2 data-i18n="backup_title">Years of store data never lost to a hardware failure.</h2>
+          <p data-i18n="backup_subtitle">ZAAD POS protects your store data with automated background backups, plus one-click manual snapshots and quick restoration whenever needed.</p>
+        </div>
+
+        <!-- Authentic Backup Screenshot Window -->
+        <div class="backup-window-wrapper fade-up">
+          <div class="app-window-frame" data-lightbox data-lightbox-gallery="backup" data-lightbox-src="assets/screenshots/backup-modal.png" data-lightbox-caption="ZAAD POS — Automated Snapshot Backup & Database Restore Modal">
+            <div class="window-header-bar">
+              <div class="window-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+              <span class="window-title" data-i18n="backup_modal_caption">ZAAD POS — Automated Snapshot Backup & Database Restore Modal</span>
+            </div>
+            <div class="app-screenshot-wrapper">
+              <img src="assets/screenshots/backup-modal.png" alt="Automated Backup & Restore Modal" loading="lazy">
+              <div class="screenshot-zoom-overlay"><span data-i18n="hero_mockup_zoom">Click to expand high-resolution screenshot</span></div>
+            </div>
+          </div>
+
+          <!-- Tag Pills Row -->
+          <div class="backup-tags-container fade-up">
+            <div class="backup-tag-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m7.8 16.2-2.9 2.9"/><path d="M6 12H2"/><path d="m7.8 7.8-2.9-2.9"/></svg>
+              <span data-i18n="backup_tag_auto">Automated Backup</span>
+            </div>
+
+            <div class="backup-tag-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <span data-i18n="backup_tag_manual">Manual Snapshot</span>
+            </div>
+
+            <div class="backup-tag-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+              <span data-i18n="backup_tag_latest">Restore Latest</span>
+            </div>
+
+            <div class="backup-tag-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span data-i18n="backup_tag_file">Restore from File</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Banner -->
+        <div class="backup-trust-banner fade-up" data-i18n="backup_badge_trust">
+          Your store data deserves a rollback plan.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: COMPACT FEATURE MATRIX -->
+    <section id="features" class="section-padding">
+      <div class="container">
+        <div class="section-header fade-up">
+          <div class="section-tag" data-i18n="matrix_eyebrow">Complete Operational Toolkit</div>
+          <h2 data-i18n="matrix_title">All the Tools Your Store Needs</h2>
+          <p data-i18n="matrix_subtitle">From Point of Sale to reports and local backups — all core operational tools in one system.</p>
+        </div>
+
+        <div class="matrix-grid">
+          <!-- Item 1: POS -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item1_title">Point of Sale (POS)</h3>
+              <p data-i18n="matrix_item1_sub">Fast checkout & thermal receipts</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Inventory -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item2_title">Inventory Control</h3>
+              <p data-i18n="matrix_item2_sub">Real-time stock deduction</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Purchases -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item3_title">Purchases & Receiving</h3>
+              <p data-i18n="matrix_item3_sub">Package conversion & invoices</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Customer Accounts -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item4_title">Customer Accounts</h3>
+              <p data-i18n="matrix_item4_sub">Credit debt & payment ledgers</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Supplier Accounts -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item5_title">Supplier Accounts</h3>
+              <p data-i18n="matrix_item5_sub">Shipments & balance tracking</p>
+            </div>
+          </div>
+
+          <!-- Item 6: Returns -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item6_title">Returns & Refunds</h3>
+              <p data-i18n="matrix_item6_sub">Item return audit register</p>
+            </div>
+          </div>
+
+          <!-- Item 7: Expenses -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item7_title">Operational Expenses</h3>
+              <p data-i18n="matrix_item7_sub">Store expense logging</p>
+            </div>
+          </div>
+
+          <!-- Item 8: Stocktaking -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item8_title">Guided Stocktaking</h3>
+              <p data-i18n="matrix_item8_sub">Stock variance calculation</p>
+            </div>
+          </div>
+
+          <!-- Item 9: Shifts -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item9_title">Shift Control</h3>
+              <p data-i18n="matrix_item9_sub">Cashier float & drawer audit</p>
+            </div>
+          </div>
+
+          <!-- Item 10: Daily Z -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item10_title">Daily Z Reports</h3>
+              <p data-i18n="matrix_item10_sub">Automated day-end summary</p>
+            </div>
+          </div>
+
+          <!-- Item 11: Local Backups -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item11_title">Local Backups</h3>
+              <p data-i18n="matrix_item11_sub">One-click snapshot restore</p>
+            </div>
+          </div>
+
+          <!-- Item 12: Staff Permissions -->
+          <div class="matrix-card fade-up">
+            <div class="matrix-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="matrix_item12_title">Staff Permissions</h3>
+              <p data-i18n="matrix_item12_sub">Role-based action control</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: SECURITY & PRIVACY -->
     <section id="security" class="section-padding">
       <div class="container">
-        <div class="security-banner fade-up">
-          <div class="security-grid">
-            <div>
-              <div class="section-tag" data-i18n="security_tag">Data Ownership & Security</div>
-              <h2 data-i18n="security_title">Local Data Storage & Privacy Transparency</h2>
-              <p data-i18n="security_desc">ZAAD POS prioritizes local data sovereignty. All critical store data—sales, inventory, customers, supplier accounts—is stored locally on the retail store's computer in a high-performance SQLite database.</p>
-              
-              <div class="transparency-pill-list">
-                <div class="transparency-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                  <div>
-                    <strong style="color:var(--text-main); display:block;" data-i18n="sec_item1_title">100% Local Data Control</strong>
-                    <span style="font-size:0.875rem; color:var(--text-muted);" data-i18n="sec_item1_desc">No cloud database subscription or external server hosting required.</span>
-                  </div>
-                </div>
+        <div class="section-header fade-up">
+          <div class="section-tag" data-i18n="sec_eyebrow">Data Ownership & Security</div>
+          <h2 data-i18n="sec_title">Your Store Data Stays Under Your Control.</h2>
+          <p data-i18n="sec_subtitle">Core operational store data is safely stored locally on your device.</p>
+        </div>
 
-                <div class="transparency-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                  <div>
-                    <strong style="color:var(--text-main); display:block;" data-i18n="sec_item2_title">Optional Google OAuth Integration</strong>
-                    <span style="font-size:0.875rem; color:var(--text-muted);" data-i18n="sec_item2_desc">Store owners can optionally connect Gmail to receive automated Daily Z business reports.</span>
-                  </div>
-                </div>
+        <!-- 3 Local Trust Cards -->
+        <div class="sec-trust-grid">
+          <div class="sec-trust-card fade-up">
+            <div class="sec-trust-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:0.5rem;" data-i18n="sec_point1">100% Local Execution</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);" data-i18n="sec_item1_desc">No cloud database subscription or external server hosting required.</p>
+          </div>
 
-                <div class="transparency-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
-                  <div>
-                    <strong style="color:var(--text-main); display:block;" data-i18n="sec_item3_title">Zero Inbox Reading or Data Selling</strong>
-                    <span style="font-size:0.875rem; color:var(--text-muted);" data-i18n="sec_item3_desc">Gmail access scope (gmail.send) is used strictly to send PDF reports. ZAAD POS never reads or scans user emails.</span>
-                  </div>
-                </div>
+          <div class="sec-trust-card fade-up">
+            <div class="sec-trust-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 14.14 14.14"/></svg>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:0.5rem;" data-i18n="sec_point2">No Internet Dependency</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);" data-i18n="sec_subtext">Core daily operations require no cloud database subscription or continuous internet connection.</p>
+          </div>
+
+          <div class="sec-trust-card fade-up">
+            <div class="sec-trust-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:0.5rem;" data-i18n="sec_point3">Local Operational Ledger</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);" data-i18n="security_desc">All critical store data—sales, inventory, customers, supplier accounts—is stored locally on the retail store's computer in a high-performance SQLite database.</p>
+          </div>
+        </div>
+
+        <!-- Standalone Optional Gmail Integration Card -->
+        <div class="sec-gmail-wrapper fade-up">
+          <div class="sec-gmail-card">
+            <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <h3 style="font-size:1.25rem; margin:0;" data-i18n="sec_gmail_title">Optional Gmail Integration</h3>
               </div>
+              <span class="gmail-optional-badge" data-i18n="sec_gmail_badge">OPTIONAL</span>
             </div>
 
-            <div style="background: var(--bg-tertiary); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
-              <h3 style="margin-bottom:1rem;" data-i18n="sec_box_title">Google API Verification Notice</h3>
-              <p style="font-size:0.925rem; margin-bottom:1rem; color:var(--text-muted);" data-i18n="sec_box_desc">
-                ZAAD POS requests restricted Gmail access solely for sending automated owner reports.
-              </p>
-              <ul style="list-style:none; display:flex; flex-direction:column; gap:0.75rem; font-size:0.875rem; color:var(--text-muted);">
-                <li style="display:flex; align-items:center; gap:0.5rem;">
-                  <span style="color:var(--accent-emerald);">✓</span>
-                  <span data-i18n="sec_box_item1">Scope requested: https://www.googleapis.com/auth/gmail.send</span>
-                </li>
-                <li style="display:flex; align-items:center; gap:0.5rem;">
-                  <span style="color:var(--accent-emerald);">✓</span>
-                  <span data-i18n="sec_box_item2">Credentials stored securely on local desktop disk</span>
-                </li>
-                <li style="display:flex; align-items:center; gap:0.5rem;">
-                  <span style="color:var(--accent-emerald);">✓</span>
-                  <span data-i18n="sec_box_item3">Revocable anytime via Google Account settings</span>
-                </li>
-              </ul>
-              <div style="margin-top:1.5rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
-                <a href="/privacy/" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1rem;" data-i18n="btn_privacy">Read Privacy Policy</a>
-                <a href="/terms/" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1rem;" data-i18n="btn_terms">View Terms</a>
-              </div>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin-bottom:1.25rem;" data-i18n="sec_gmail_desc">
+              ZAAD POS utilizes the gmail.send scope strictly to dispatch automated Daily Z reports when enabled, and never accesses or reads inbox contents.
+            </p>
+
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.875rem; color:var(--text-muted); margin-bottom:1.5rem;">
+              <li style="display:flex; align-items:center; gap:0.5rem;">
+                <span style="color:var(--accent-emerald);">✓</span>
+                <span data-i18n="sec_box_item1">Scope requested: https://www.googleapis.com/auth/gmail.send</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:0.5rem;">
+                <span style="color:var(--accent-emerald);">✓</span>
+                <span data-i18n="sec_box_item2">Credentials stored securely on local desktop disk</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:0.5rem;">
+                <span style="color:var(--accent-emerald);">✓</span>
+                <span data-i18n="sec_box_item3">Revocable anytime via Google Account settings</span>
+              </li>
+            </ul>
+
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+              <a href="privacy/" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1rem;" data-i18n="btn_privacy">Read Privacy Policy</a>
+              <a href="terms/" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1rem;" data-i18n="btn_terms">View Terms</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT & COMMERCIAL SECTION -->
-    <section id="contact" class="section-padding" style="background: var(--bg-secondary);">
+    <!-- SECTION: FOUNDER TRUST STRIP -->
+    <section id="founder-trust" class="section-padding">
+      <div class="container">
+        <div class="founder-trust-card fade-up">
+          <div class="founder-card-glow"></div>
+          
+          <div class="founder-trust-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span data-i18n="founder_badge">Practical Store Vision</span>
+          </div>
+
+          <h2 class="founder-headline" data-i18n="founder_headline">Built to Simplify Daily Store Operations</h2>
+          
+          <div class="founder-quote-wrapper">
+            <svg class="founder-quote-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <p class="founder-message" data-i18n="founder_message">
+              "Behind ZAAD POS is one vision: building a practical system that helps store owners track sales, inventory, shifts, and cash movements from one place."
+            </p>
+          </div>
+
+          <div class="founder-subline-pill">
+            <span class="founder-subline" data-i18n="founder_subline">From checkout and inventory to shifts and reporting.</span>
+          </div>
+
+          <div class="founder-profile-meta">
+            <div class="founder-avatar-wrapper">
+              <div class="founder-avatar-icon">GQ</div>
+              <span class="founder-verified-dot" title="Verified Founder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+            </div>
+            <div class="founder-meta-info">
+              <div class="founder-name-row">
+                <span class="founder-name">Gehad Qabel</span>
+                <span class="founder-badge-verified">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <span data-i18n="founder_verified_tag">المؤسس</span>
+                </span>
+              </div>
+              <div class="founder-title" data-i18n="founder_title">Founder & Product Owner — ZAAD POS</div>
+            </div>
+            <a href="https://wa.me/201029247516?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%D8%A9%20%D8%AC%D9%87%D8%A7%D8%AF%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%B9%D9%86%20ZAAD%20POS." target="_blank" rel="noopener noreferrer" class="founder-direct-chat" aria-label="تواصل مباشر مع المؤسس">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#25d366"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span data-i18n="founder_direct_btn">تواصل مع المؤسس</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: FINAL SALES CONVERSION CTA & CONTACT -->
+    <section id="contact" class="section-padding">
       <div class="container">
         <div class="section-header fade-up">
-          <div class="section-tag" data-i18n="contact_tag">Commercial & Support</div>
-          <h2 data-i18n="contact_title">Get in Touch with ZAAD POS</h2>
-          <p data-i18n="contact_subtitle">Request a product demonstration or speak directly with our engineering and product support team.</p>
+          <div class="section-tag" data-i18n="cta_eyebrow">Live Demonstration</div>
+          <h2 data-i18n="cta_title">See ZAAD POS Working for Your Store Firsthand</h2>
+          <p data-i18n="cta_subtitle">Schedule a live demonstration and see sales, inventory, shifts, and reports in action.</p>
         </div>
 
-        <div class="contact-grid">
-          <div class="contact-card fade-up">
-            <h3 data-i18n="contact_info_title">Contact Information</h3>
-            <p data-i18n="contact_info_desc">We provide direct commercial support for retail store deployments.</p>
-
-            <div class="contact-method-list">
-              <a href="mailto:support@zaadsystem.com" class="contact-method">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                <div>
-                  <strong style="display:block; color:var(--text-main);" data-i18n="contact_email_title">Email Support</strong>
-                  <span style="font-size:0.875rem; color:var(--text-muted);">support@zaadsystem.com</span>
-                </div>
-              </a>
-
-              <a href="https://wa.me/201029247516" target="_blank" rel="noopener noreferrer" class="contact-method">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <div>
-                  <strong style="display:block; color:var(--text-main);" data-i18n="contact_phone_title">Phone & WhatsApp</strong>
-                  <span style="font-size:0.875rem; color:var(--text-muted);">+20 102 924 7516 (01029247516)</span>
-                </div>
-              </a>
-
-              <a href="https://www.linkedin.com/in/gehad-qabel-aa287b266" target="_blank" rel="noopener noreferrer" class="contact-method">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                <div>
-                  <strong style="display:block; color:var(--text-main);" data-i18n="contact_linkedin_title">LinkedIn Profile</strong>
-                  <span style="font-size:0.875rem; color:var(--text-muted);">Gehad Qabel — Product Owner</span>
-                </div>
-              </a>
+        <!-- 3-Field Demo Form Conversion Card -->
+        <div class="cta-conversion-box fade-up">
+          <form onsubmit="event.preventDefault(); window.location.href='mailto:support@zaadsystem.com?subject=ZAAD%20POS%20Demo%20Request&body=Hello%20ZAAD%20POS%20Team,%0A%0AI%20would%20like%20to%20request%20a%20demo%20for%20my%20store.';">
+            <!-- Field 1: Store Name -->
+            <div class="cta-form-group">
+              <label class="cta-form-label" data-i18n="form_store_label">Business / Store Name</label>
+              <input type="text" class="cta-form-input" placeholder="e.g. Al-Belgiky Hypermarket" data-i18n-ph="form_store_ph" required>
             </div>
 
-            <!-- Founder Attribution -->
-            <div class="founder-box">
-              <div class="founder-info" data-i18n="contact_founder">
-                Built and maintained by <strong>Gehad Qabel</strong>
-              </div>
+            <!-- Field 2: Phone / WhatsApp -->
+            <div class="cta-form-group">
+              <label class="cta-form-label" data-i18n="form_contact_label">Contact Email or Phone</label>
+              <input type="text" class="cta-form-input" placeholder="e.g. owner@example.com or 010xxxxxxxx" data-i18n-ph="form_contact_ph" required>
             </div>
-          </div>
 
-          <div class="contact-card fade-up">
-            <h3 data-i18n="contact_form_title">Schedule a Product Demo</h3>
-            <p style="margin-bottom: 1.5rem;" data-i18n="contact_form_desc">See how ZAAD POS can optimize your retail supermarket operations.</p>
+            <!-- Field 3: Store Type -->
+            <div class="cta-form-group" style="margin-bottom:1.5rem;">
+              <label class="cta-form-label" data-i18n="form_type_label">Store Type</label>
+              <select class="cta-form-select">
+                <option data-i18n="form_type_opt1">Supermarket</option>
+                <option data-i18n="form_type_opt2">Hypermarket</option>
+                <option data-i18n="form_type_opt3">Minimarket / Grocery</option>
+                <option data-i18n="form_type_opt4">Retail Store</option>
+              </select>
+            </div>
 
-            <form onsubmit="event.preventDefault(); window.location.href='mailto:support@zaadsystem.com?subject=ZAAD%20POS%20Demo%20Request&body=Hello%20ZAAD%20POS%20Team,%0A%0AI%20would%20like%20to%20request%20a%20demo%20for%20my%20store.';">
-              <div style="margin-bottom: 1rem;">
-                <label style="display:block; font-size:0.875rem; font-weight:600; margin-bottom:0.4rem; color:var(--text-main);" data-i18n="form_store_label">Business / Store Name</label>
-                <input type="text" placeholder="e.g. Al-Belgiky Hypermarket" data-i18n-ph="form_store_ph" required style="width:100%; padding:0.75rem; border-radius:var(--radius-md); border:1px solid var(--border-light); background:var(--bg-tertiary); color:var(--text-main);">
-              </div>
-              <div style="margin-bottom: 1rem;">
-                <label style="display:block; font-size:0.875rem; font-weight:600; margin-bottom:0.4rem; color:var(--text-main);" data-i18n="form_contact_label">Contact Email or Phone</label>
-                <input type="text" placeholder="e.g. owner@example.com or 010xxxxxxxx" data-i18n-ph="form_contact_ph" required style="width:100%; padding:0.75rem; border-radius:var(--radius-md); border:1px solid var(--border-light); background:var(--bg-tertiary); color:var(--text-main);">
-              </div>
-              <div style="margin-bottom: 1.5rem;">
-                <label style="display:block; font-size:0.875rem; font-weight:600; margin-bottom:0.4rem; color:var(--text-main);" data-i18n="form_type_label">Store Type</label>
-                <select style="width:100%; padding:0.75rem; border-radius:var(--radius-md); border:1px solid var(--border-light); background:var(--bg-tertiary); color:var(--text-main);">
-                  <option data-i18n="form_type_opt1">Supermarket</option>
-                  <option data-i18n="form_type_opt2">Hypermarket</option>
-                  <option data-i18n="form_type_opt3">Minimarket / Grocery</option>
-                  <option data-i18n="form_type_opt4">Retail Store</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="form_submit">Submit Demo Request</button>
-            </form>
-          </div>
+            <!-- Actions Row: Primary Submit & Secondary WhatsApp -->
+            <div class="cta-actions-row">
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;" data-i18n="cta_btn_primary">
+                Request Demo
+              </button>
+
+              <a href="https://wa.me/201029247516?text=Hello,%20I%20would%20like%20to%20request%20a%20demo%20for%20ZAAD%20POS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width:100%; justify-content:center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span data-i18n="cta_btn_wa">Connect via WhatsApp</span>
+              </a>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -596,37 +975,48 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-container">
+      <!-- Restrained Trust Badges Strip -->
+      <div class="footer-trust-pills-row">
+        <span class="footer-trust-pill" data-i18n="footer_trust1">Local Execution</span>
+        <span class="footer-trust-pill" data-i18n="footer_trust2">Barcode Support</span>
+        <span class="footer-trust-pill" data-i18n="footer_trust3">Local Backup</span>
+        <span class="footer-trust-pill" data-i18n="footer_trust4">Daily Z Reports</span>
+      </div>
+
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#" class="brand-logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 10-5 10 5-10 5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
             <span>ZAAD<span style="color:var(--accent-emerald)">POS</span></span>
           </a>
-          <p data-i18n="footer_brand_desc">High-performance desktop point-of-sale and retail management system for modern supermarket and retail operations.</p>
+          <p data-i18n="footer_brand_desc">Integrated desktop point of sale & retail management system.</p>
+          <div class="footer-founder-tag" data-i18n="footer_founder_tag">
+            Founder & Product Owner — Gehad Qabel
+          </div>
         </div>
 
         <div class="footer-col">
           <h4 data-i18n="footer_col_nav">Navigation</h4>
           <ul class="footer-links">
             <li><a href="#hero" data-i18n="nav_home">Home</a></li>
-            <li><a href="#workflow" data-i18n="nav_workflow">Workflow</a></li>
-            <li><a href="#product" data-i18n="nav_showcase">Showcase</a></li>
+            <li><a href="#why-zaad" data-i18n="nav_why">Why ZAAD</a></li>
             <li><a href="#features" data-i18n="nav_features">Features</a></li>
+            <li><a href="#security" data-i18n="nav_security">Security</a></li>
+            <li><a href="#" data-open-demo data-i18n="btn_request_demo">Request Demo</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4 data-i18n="footer_col_security">Trust & Security</h4>
+          <h4 data-i18n="footer_col_security">Trust & Legal</h4>
           <ul class="footer-links">
             <li><a href="#security" data-i18n="nav_security">Local Data Policy</a></li>
-            <li><a href="/privacy/" data-i18n="nav_privacy">Privacy Policy</a></li>
-            <li><a href="/terms/" data-i18n="nav_terms">Terms of Service</a></li>
-            <li><a href="mailto:support@zaadsystem.com">support@zaadsystem.com</a></li>
+            <li><a href="privacy/" data-i18n="nav_privacy">Privacy Policy</a></li>
+            <li><a href="terms/" data-i18n="nav_terms">Terms of Service</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4 data-i18n="footer_col_contact">Contact</h4>
+          <h4 data-i18n="footer_col_contact">Contact Support</h4>
           <ul class="footer-links">
             <li><a href="mailto:support@zaadsystem.com">support@zaadsystem.com</a></li>
             <li><a href="https://wa.me/201029247516" target="_blank" rel="noopener noreferrer">+20 102 924 7516</a></li>
@@ -636,10 +1026,10 @@
       </div>
 
       <div class="footer-bottom">
-        <span data-i18n="footer_rights">© 2026 ZAAD POS (zaadsystem.com). All rights reserved. Built and maintained by Gehad Qabel.</span>
-        <div>
-          <a href="/privacy/" style="margin-right:1rem;" data-i18n="nav_privacy">Privacy Policy</a>
-          <a href="/terms/" data-i18n="nav_terms">Terms of Service</a>
+        <span data-i18n="footer_rights">© 2026 ZAAD POS. All rights reserved.</span>
+        <div class="footer-legal-links">
+          <a href="privacy/" data-i18n="nav_privacy">Privacy Policy</a>
+          <a href="terms/" data-i18n="nav_terms">Terms of Service</a>
         </div>
       </div>
     </div>
@@ -649,8 +1039,11 @@
   <div id="lightbox-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Screenshot Lightbox">
     <div class="lightbox-content">
       <button type="button" class="modal-close-btn close-lightbox" aria-label="Close Lightbox">&times;</button>
+      <button type="button" class="lightbox-nav-btn prev" aria-label="Previous Image">&lsaquo;</button>
+      <button type="button" class="lightbox-nav-btn next" aria-label="Next Image">&rsaquo;</button>
       <img id="lightbox-img" src="" alt="Expanded View">
       <p id="lightbox-caption" style="color:#ffffff; text-align:center; margin-top:0.75rem; font-weight:500;"></p>
+      <div id="lightbox-counter" class="lightbox-counter"></div>
     </div>
   </div>
 
@@ -662,7 +1055,7 @@
       <p style="margin-bottom:1.5rem; font-size:0.95rem;" data-i18n="modal_demo_desc">Contact us via email or WhatsApp to schedule a live demo of ZAAD POS.</p>
       
       <div style="display:flex; flex-direction:column; gap:1rem;">
-        <a href="https://wa.me/201029247516?text=Hello,%20I%20would%20like%20to%20request%20a%20demo%20for%20ZAAD%20POS." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="justify-content:center;">
+        <a href="https://wa.me/201029247516?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D9%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF%20%D8%B9%D9%86%20ZAAD%20POS." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="justify-content:center;">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span data-i18n="modal_demo_wa">Connect via WhatsApp (+20 102 924 7516)</span>
         </a>
@@ -675,8 +1068,15 @@
     </div>
   </div>
 
+  <!-- Floating WhatsApp Contact Button -->
+  <a href="https://wa.me/201029247516?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D9%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF%20%D8%B9%D9%86%20ZAAD%20POS." target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Contact on WhatsApp" title="تواصل معنا عبر واتساب">
+    <div class="floating-wa-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#25d366"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </div>
+  </a>
+
   <!-- i18n Engine & Main JavaScript -->
-  <script src="/assets/js/i18n.js"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/i18n.js?v=2.6"></script>
+  <script src="assets/js/main.js?v=2.6"></script>
 </body>
 </html>
